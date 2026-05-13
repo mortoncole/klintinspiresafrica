@@ -5,7 +5,9 @@
       "Bash(npm install *)",
       "Bash(npm run *)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(npx kill-port *)"
+      "Bash(npx kill-port *)",
+      "PowerShell(cd \"D:\\\\Projects\\\\KlintInspiresAfrica\"; \\(Get-ChildItem public -Recurse | Measure-Object -Property Length -Sum\\).Sum / 1MB)",
+      "PowerShell(cd \"D:\\\\Projects\\\\KlintInspiresAfrica\\\\public\"; Get-ChildItem -Recurse | Where-Object { !$_.PSIsContainer } | Sort-Object Length -Descending | Select-Object -First 20 | Format-Table Name, @{N='Size\\(MB\\)';E={[math]::Round\\($_.Length/1MB,2\\)}}, DirectoryName -AutoSize)"
     ]
   }
 }
