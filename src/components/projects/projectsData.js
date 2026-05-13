@@ -1,0 +1,136 @@
+export const categories = ['All', 'Outreach', 'Education', 'Health', 'Community']
+
+export const projects = [
+  // ─── FEATURED (upcoming) ───────────────────────────────────────────────────
+  {
+    id: 7,
+    title: 'Pad a Girl Outreach',
+    category: 'Health',
+    description:
+      'Donation of 500 sanitary pads to JHS girls in Obuasi East & West. Join us as we educate Junior High School girls on menstrual hygiene, promote healthy practices, and support them with essential sanitary materials.',
+    image: '/projects/pad-a-girl.jpg',
+    fallback: 'from-purple-600 to-purple-950',
+    impact: '500 Sanitary Pads',
+    year: '2026',
+    date: '27th – 29th May 2026',
+    featured: true,
+    upcoming: true,
+    activities: [
+      'Menstrual Hygiene Education',
+      'Health & Personal Care Guidance',
+      'Free Sanitary Pad Distribution',
+      'Interactive Q&A Session',
+    ],
+    partners: [
+      'HESA KNUST – Obuasi Campus',
+      'Godfred Acheampong Foundation',
+      'A.A Foundation',
+    ],
+  },
+
+  // ─── PAST PROJECTS ────────────────────────────────────────────────────────
+  {
+    id: 1,
+    title: 'Streetmas 2.0 Outreach',
+    category: 'Outreach',
+    description:
+      'Our second annual food donation and gift outreach to street-connected and homeless youth across Accra — bigger, bolder, and more impactful than ever.',
+    image: '/projects/streetmas2.jpg',
+    fallback: 'from-gray-600 to-gray-900',
+    impact: '1000+ Beneficiaries',
+    year: '2025',
+    featured: false,
+    upcoming: false,
+  },
+  {
+    id: 2,
+    title: 'Streetmas 1.0 Outreach',
+    category: 'Outreach',
+    description:
+      'The outreach that started it all — delivering meals, gifts, and hope to homeless youth on the streets during the festive season.',
+    image: '/projects/streetmas1.jpg',
+    fallback: 'from-amber-700 to-amber-950',
+    impact: '500+ Beneficiaries',
+    year: '2024',
+    featured: false,
+    upcoming: false,
+  },
+  {
+    id: 8,
+    title: 'Elite Day With the Orphans',
+    category: 'Outreach',
+    description:
+      'An interactive, educative, and donation session at the Adullam Orphanage in Obuasi — spending quality time with the children, sharing gifts, and giving them a day to remember.',
+    image: '/projects/orphans.jpg',
+    fallback: 'from-rose-500 to-rose-900',
+    impact: 'Adullam Orphanage',
+    year: '2023',
+    featured: false,
+    upcoming: false,
+  },
+  {
+    id: 9,
+    title: 'Christ the King SHS Empowerment',
+    category: 'Education',
+    description:
+      'A powerful empowerment session with final year students at Christ the King Senior High School, Obuasi — preparing them for their WASSCE exams and donating educational supplies.',
+    image: '/projects/ctkSHS.jpg',
+    fallback: 'from-indigo-500 to-indigo-900',
+    impact: 'Final Year Students',
+    year: '2023',
+    featured: false,
+    upcoming: false,
+  },
+  {
+    id: 3,
+    title: 'Educational Empowerment',
+    category: 'Education',
+    description:
+      'Equipping underprivileged students with books, school supplies, and mentorship sessions to keep them in school and thriving.',
+    image: '/projects/education.jpg',
+    fallback: 'from-orange-600 to-orange-900',
+    impact: '3 Schools Reached',
+    year: '2023',
+    featured: false,
+    upcoming: false,
+  },
+  {
+    id: 4,
+    title: 'Health Awareness Drive',
+    category: 'Health',
+    description:
+      'Free health screenings, wellness talks, and hygiene kits delivered to underserved communities in collaboration with local health officers.',
+    image: '/projects/health.svg',
+    fallback: 'from-teal-600 to-teal-900',
+    impact: 'Anticipate...',
+    year: 'Coming Soon',
+    featured: false,
+    upcoming: true,
+  },
+  {
+    id: 5,
+    title: 'Community Clean-Up',
+    category: 'Community',
+    description:
+      'Mobilising youth volunteers to reclaim and beautify public spaces, fostering pride and environmental responsibility in local communities.',
+    image: '/projects/cleanup.svg',
+    fallback: 'from-lime-600 to-lime-900',
+    impact: '5 Communities',
+    year: 'Coming Soon',
+    featured: false,
+    upcoming: true,
+  },
+  {
+    id: 6,
+    title: 'Back to School Drive',
+    category: 'Education',
+    description:
+      'A targeted initiative providing school bags, stationery, and uniforms to children at risk of dropping out due to financial constraints.',
+    image: '/projects/school.svg',
+    fallback: 'from-sky-600 to-sky-900',
+    impact: 'Anticipate...',
+    year: 'Coming Soon',
+    featured: false,
+    upcoming: true,
+  },
+]
