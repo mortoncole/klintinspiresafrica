@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 
 const SITE_NAME = 'Klint Inspires Africa'
-const SITE_URL = 'https://klintinspiresafrica.org'
+const SITE_URL = 'https://klintinspiresafrica.com'
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.jpg`
 
 export default function SEO({ title, description, path = '', image, article = false }) {

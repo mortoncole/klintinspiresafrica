@@ -1,5 +1,5 @@
 const shareText = encodeURIComponent('Klint Inspires Africa Foundation is changing lives through education, outreach & community work. Support them here:')
-const shareUrl  = encodeURIComponent('https://klintinspiresafrica.org')
+const shareUrl  = encodeURIComponent('https://klintinspiresafrica.com')
 
 const platforms = [
   {
