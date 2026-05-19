@@ -12,20 +12,20 @@
 
     <!-- Security headers via meta -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()" />
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
-      script-src 'self' 'unsafe-inline' https://www.tiktok.com https://sf16-website-login.neutral.ttwstatic.com https://lf16-tiktok-web.ttwstatic.com;
+      script-src 'self' https://www.tiktok.com https://sf16-website-login.neutral.ttwstatic.com https://lf16-tiktok-web.ttwstatic.com;
       style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
       font-src 'self' https://fonts.gstatic.com;
-      img-src 'self' data: https:;
+      img-src 'self' data: https://www.tiktok.com https://*.tiktokcdn.com;
       frame-src https://www.tiktok.com;
       connect-src 'self' https://formspree.io;
       object-src 'none';
       base-uri 'self';
       form-action 'self' https://formspree.io;
+      frame-ancestors 'self';
     " />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
