@@ -46,15 +46,15 @@ export default function VolunteerForm() {
     if (Object.keys(errs).length) { setErrors(errs); return }
     setStatus('sending')
     try {
-      // Replace YOUR_VOLUNTEER_FORM_ID with your Formspree endpoint
       const res = await fetch('https://formspree.io/f/mgoqovyv', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({ ...form, skills: form.skills.join(', ') }),
       })
-      setStatus(res.ok ? 'success' : 'error')
-      if (res.ok) setForm(initial)
-    } catch { setStatus('error') }
+      const data = await res.json().catch(() => ({}))
+      if (res.ok) { setStatus('success'); setForm(initial) }
+      else { setStatus('error'); setErrors((e) => ({ ...e, _server: data?.error || `Error ${res.status}` })) }
+    } catch (err) { setStatus('error'); setErrors((e) => ({ ...e, _server: err.message })) }
   }
 
   const inputCls = (f) =>
@@ -154,7 +154,9 @@ export default function VolunteerForm() {
       </div>
 
       {status === 'error' && (
-        <p className="text-red-500 text-sm bg-red-50 border border-red-200 rounded-xl px-4 py-3">Something went wrong. Please try again.</p>
+        <p className="text-red-500 text-sm bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+          Something went wrong. {errors._server && <span className="font-semibold">{errors._server}</span>}
+        </p>
       )}
 
       <button type="submit" disabled={status === 'sending'}
