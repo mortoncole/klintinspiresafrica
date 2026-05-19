@@ -51,10 +51,7 @@ export default function ContactForm() {
 
     setStatus('sending')
     try {
-      // ─── Replace the URL below with your Formspree endpoint ───────────────
-      // Sign up free at https://formspree.io → New Form → copy your endpoint.
-      // Example: 'https://formspree.io/f/xpwzabcd'
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const res = await fetch('https://formspree.io/f/mojbjvjq', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(form),

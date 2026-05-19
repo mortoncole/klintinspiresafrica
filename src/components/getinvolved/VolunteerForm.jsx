@@ -47,7 +47,7 @@ export default function VolunteerForm() {
     setStatus('sending')
     try {
       // Replace YOUR_VOLUNTEER_FORM_ID with your Formspree endpoint
-      const res = await fetch('https://formspree.io/f/YOUR_VOLUNTEER_FORM_ID', {
+      const res = await fetch('https://formspree.io/f/mgoqovyv', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({ ...form, skills: form.skills.join(', ') }),
