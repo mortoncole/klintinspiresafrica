@@ -79,7 +79,7 @@ export const albums = [
   {
     id: 6,
     title: 'Pad a Girl Outreach',
-    subtitle: 'Menstrual Hygiene Drive · Obuasi 2026',
+    subtitle: 'Independence School Park · Obuasi East · May 2026',
     category: 'Health',
     year: '2026',
     fallback: 'from-purple-600 to-purple-950',

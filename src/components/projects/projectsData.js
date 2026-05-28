@@ -7,12 +7,12 @@ export const projects = [
     title: 'Pad a Girl Outreach',
     category: 'Health',
     description:
-      'We donated 500 sanitary pads to JHS girls in Obuasi East & West — educating Junior High School girls on menstrual hygiene, promoting healthy practices, and supporting them with essential sanitary materials.',
+      'We reached 300+ JHS girls at the Independence School Park, Obuasi East — donating sanitary pads, educating girls on menstrual hygiene, and empowering them with the knowledge and materials to thrive.',
     image: '/projects/pad-a-girl.jpg',
     fallback: 'from-purple-600 to-purple-950',
-    impact: '500 Sanitary Pads',
+    impact: '300+ Girls Reached',
     year: '2026',
-    date: 'May 2026',
+    date: 'May 13, 2026',
     featured: true,
     upcoming: false,
     activities: [
