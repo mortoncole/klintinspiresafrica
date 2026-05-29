@@ -24,12 +24,12 @@ const slides = [
   },
   {
     image: '/projects/pad-a-girl.jpg',
-    badge: 'Upcoming · May 2026',
+    badge: 'Health · May 2026',
     headline: 'Pad a Girl',
-    accent: 'Outreach.',
-    sub: '500 sanitary pads. Menstrual hygiene education. Real change for JHS girls in Obuasi East & West.',
-    primary: { label: 'Support This Project', to: '/get-involved#donate' },
-    secondary: { label: 'Learn More', to: '/projects' },
+    accent: 'Mission Complete.',
+    sub: '300+ JHS girls reached at Independence School Park, Obuasi East — pads distributed, hygiene education delivered.',
+    primary: { label: 'See the Gallery', to: '/gallery' },
+    secondary: { label: 'Support Us', to: '/get-involved#donate' },
   },
   {
     image: '/projects/ctkSHS.jpg',
