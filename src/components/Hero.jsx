@@ -5,6 +5,15 @@ const DURATION = 5000
 
 const slides = [
   {
+    image: '/gallery/padagirl/edusession.JPG',
+    badge: 'Health · May 2026',
+    headline: 'Pad a Girl',
+    accent: 'Mission Complete.',
+    sub: '500+ JHS girls reached at Independence School Park, Obuasi East — pads distributed, hygiene education delivered.',
+    primary: { label: 'See the Gallery', to: '/gallery' },
+    secondary: { label: 'Support Us', to: '/get-involved#donate' },
+  },
+  {
     image: '/hero-bg.jpg',
     badge: 'Our Mission',
     headline: 'Inspiring Hope.',
@@ -20,15 +29,6 @@ const slides = [
     accent: 'This Christmas.',
     sub: 'Streetmas 2.0 brought meals, gifts, and hope to street-connected youth across Accra — bigger and bolder than ever.',
     primary: { label: 'See the Impact', to: '/projects' },
-    secondary: { label: 'Support Us', to: '/get-involved#donate' },
-  },
-  {
-    image: '/projects/pad-a-girl.jpg',
-    badge: 'Health · May 2026',
-    headline: 'Pad a Girl',
-    accent: 'Mission Complete.',
-    sub: '500+ JHS girls reached at Independence School Park, Obuasi East — pads distributed, hygiene education delivered.',
-    primary: { label: 'See the Gallery', to: '/gallery' },
     secondary: { label: 'Support Us', to: '/get-involved#donate' },
   },
   {
