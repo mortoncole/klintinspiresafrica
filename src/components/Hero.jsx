@@ -27,7 +27,7 @@ const slides = [
     badge: 'Health · May 2026',
     headline: 'Pad a Girl',
     accent: 'Mission Complete.',
-    sub: '300+ JHS girls reached at Independence School Park, Obuasi East — pads distributed, hygiene education delivered.',
+    sub: '500+ JHS girls reached at Independence School Park, Obuasi East — pads distributed, hygiene education delivered.',
     primary: { label: 'See the Gallery', to: '/gallery' },
     secondary: { label: 'Support Us', to: '/get-involved#donate' },
   },
