@@ -8,7 +8,7 @@ export const projects = [
     category: 'Health',
     description:
       'We reached 500+ JHS girls at the Independence School Park, Obuasi East — donating sanitary pads, educating girls on menstrual hygiene, and empowering them with the knowledge and materials to thrive.',
-    image: '/projects/pad-a-girl.jpg',
+    image: '/gallery/padagirl/crowd.JPG',
     fallback: 'from-purple-600 to-purple-950',
     impact: '500+ Girls Reached',
     year: '2026',

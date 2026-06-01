@@ -121,10 +121,10 @@ export default function FeaturedProject() {
                   <span className="text-brand-navy font-bold text-sm">{featured.impact}</span>
                 </div>
                 <Link
-                  to="/get-involved#donate"
+                  to={featured.upcoming ? '/get-involved#donate' : '/gallery'}
                   className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-sm uppercase tracking-wide transition-colors duration-200 shadow-lg animate-pulse_cta"
                 >
-                  Support This Project
+                  {featured.upcoming ? 'Support This Project' : 'See the Gallery'}
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none"
                     viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
