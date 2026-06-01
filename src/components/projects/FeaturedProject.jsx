@@ -121,7 +121,7 @@ export default function FeaturedProject() {
                   <span className="text-brand-navy font-bold text-sm">{featured.impact}</span>
                 </div>
                 <Link
-                  to={featured.upcoming ? '/get-involved#donate' : '/gallery'}
+                  to={featured.upcoming ? '/get-involved#donate' : `/gallery#${featured.title.toLowerCase().replace(/\s+/g, '-')}`}
                   className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-brand-orange hover:bg-brand-orange-dark text-white font-bold text-sm uppercase tracking-wide transition-colors duration-200 shadow-lg animate-pulse_cta"
                 >
                   {featured.upcoming ? 'Support This Project' : 'See the Gallery'}

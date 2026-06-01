@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
 import { albumCategories, albums } from './galleryData'
 
 // ─── Lightbox ────────────────────────────────────────────────────────────────
@@ -214,6 +215,7 @@ function AlbumTile({ album, onOpen }) {
 export default function GalleryGrid() {
   const [active, setActive] = useState('All')
   const [lightbox, setLightbox] = useState(null)
+  const location = useLocation()
 
   const filtered = active === 'All'
     ? albums
@@ -221,6 +223,19 @@ export default function GalleryGrid() {
 
   const openLightbox = (album, startIndex) => setLightbox({ album, startIndex })
   const closeLightbox = () => setLightbox(null)
+
+  // Auto-open album from URL hash e.g. /gallery#pad-a-girl-outreach
+  useEffect(() => {
+    if (!location.hash) return
+    const slug = location.hash.replace('#', '')
+    const match = albums.find(
+      (a) => a.title.toLowerCase().replace(/\s+/g, '-') === slug
+    )
+    if (match) {
+      setActive(match.category)
+      setTimeout(() => openLightbox(match, 0), 300)
+    }
+  }, [location.hash])
 
   return (
     <section className="bg-gray-50 py-16 px-4">
