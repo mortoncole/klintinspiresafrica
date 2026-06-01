@@ -12,7 +12,7 @@ export const projects = [
     fallback: 'from-purple-600 to-purple-950',
     impact: '500+ Girls Reached',
     year: '2026',
-    date: 'May 13, 2026',
+    date: 'May 26, 2026',
     featured: true,
     upcoming: false,
     activities: [
