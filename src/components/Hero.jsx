@@ -12,7 +12,7 @@ const slides = [
     accent: 'Summit.',
     sub: 'SAT. 29TH AUG at COFKANS CONFERENCE HALL — Join us for the inaugural African Young Leaders Summit: "The Future is Now: Developing Africa\'s Next Generation of Leaders and Policymakers." Free registration, limited slots.',
     primary: { label: 'Register Now', href: 'https://forms.gle/vUeZvRP4W5mFs4F77', isExternal: true },
-    secondary: { label: 'Learn More', to: '/projects' },
+    secondary: null,
   },
   {
     image: '/gallery/padagirl/edusession.JPG',
@@ -146,12 +146,14 @@ export default function Hero() {
                   {slide.primary.label}
                 </Link>
               )}
-              <Link
-                to={slide.secondary.to}
-                className="px-7 py-3 rounded-full border-2 border-white/40 hover:border-brand-orange hover:text-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide transition-all duration-200"
-              >
-                {slide.secondary.label}
-              </Link>
+              {slide.secondary && (
+                <Link
+                  to={slide.secondary.to}
+                  className="px-7 py-3 rounded-full border-2 border-white/40 hover:border-brand-orange hover:text-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide transition-all duration-200"
+                >
+                  {slide.secondary.label}
+                </Link>
+              )}
             </div>
           </div>
         </div>
