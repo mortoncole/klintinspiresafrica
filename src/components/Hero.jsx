@@ -2,8 +2,18 @@ import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const DURATION = 5000
+const AYLS_DURATION = 60000
 
 const slides = [
+  {
+    image: '/AYLS.jpg',
+    badge: 'Summit · August 2026',
+    headline: 'African Young Leaders',
+    accent: 'Summit.',
+    sub: 'SAT. 29TH AUG at COFKANS CONFERENCE HALL — Join us for the inaugural African Young Leaders Summit: "The Future is Now: Developing Africa\'s Next Generation of Leaders and Policymakers." Free registration, limited slots.',
+    primary: { label: 'Register Now', href: 'https://forms.gle/vUeZvRP4W5mFs4F77', isExternal: true },
+    secondary: { label: 'Learn More', to: '/projects' },
+  },
   {
     image: '/gallery/padagirl/edusession.JPG',
     badge: 'Health · May 2026',
@@ -62,9 +72,10 @@ export default function Hero() {
 
   useEffect(() => {
     if (paused) return
+    const duration = current === 0 ? AYLS_DURATION : DURATION
     intervalRef.current = setInterval(() => {
       setCurrent((c) => (c + 1) % slides.length)
-    }, DURATION)
+    }, duration)
     return () => clearInterval(intervalRef.current)
   }, [paused, current])
 
@@ -118,12 +129,23 @@ export default function Hero() {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
-              <Link
-                to={slide.primary.to}
-                className="px-7 py-3 rounded-full bg-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide hover:bg-brand-orange-dark transition-colors duration-200 shadow-lg"
-              >
-                {slide.primary.label}
-              </Link>
+              {slide.primary.isExternal ? (
+                <a
+                  href={slide.primary.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-7 py-3 rounded-full bg-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide hover:bg-brand-orange-dark transition-colors duration-200 shadow-lg animate-pulse_cta"
+                >
+                  {slide.primary.label}
+                </a>
+              ) : (
+                <Link
+                  to={slide.primary.to}
+                  className="px-7 py-3 rounded-full bg-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide hover:bg-brand-orange-dark transition-colors duration-200 shadow-lg"
+                >
+                  {slide.primary.label}
+                </Link>
+              )}
               <Link
                 to={slide.secondary.to}
                 className="px-7 py-3 rounded-full border-2 border-white/40 hover:border-brand-orange hover:text-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide transition-all duration-200"
@@ -184,7 +206,14 @@ export default function Hero() {
         <div className="mt-4 h-0.5 w-full bg-white/10">
           <div
             key={`${current}-${paused}`}
-            className={`h-full bg-brand-orange ${paused ? '' : 'animate-hero_progress'}`}
+            className="h-full bg-brand-orange"
+            style={
+              paused
+                ? { width: '0%' }
+                : {
+                    animation: `hero_progress ${current === 0 ? AYLS_DURATION : DURATION}ms linear forwards`,
+                  }
+            }
           />
         </div>
       </div>
