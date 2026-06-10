@@ -43,15 +43,6 @@ const slides = [
   },
   {
     image: '/projects/edu1.jpg',
-    badge: 'Education · 2023',
-    headline: 'Empowering Students',
-    accent: 'To Reach Their Best.',
-    sub: 'From WASSCE prep sessions to donated supplies — we show up where young people need us most.',
-    primary: { label: 'Our Projects', to: '/projects' },
-    secondary: { label: 'Volunteer', to: '/get-involved#volunteer' },
-  },
-  //{
-    image: '/projects/orphans.jpg',
     badge: 'Outreach · 2023',
     headline: 'Because Every Child',
     accent: 'Deserves to Smile.',
