@@ -15,7 +15,7 @@ const slides = [
     secondary: null,
   },
   {
-    image: '/gallery/padagirl/edusession.JPG',
+    image: '/gallery/padagirl/wide5.JPG',
     badge: 'Health · May 2026',
     headline: 'Pad a Girl',
     accent: 'Mission Complete.',
