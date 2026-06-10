@@ -44,7 +44,7 @@ export default function CookieConsent() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
           {/* Left: Description */}
           <div className="lg:col-span-2">
-            <h3 className="text-lg sm:text-xl font-bold mb-2">🍪 Cookie & Privacy Settings</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-2">Cookie & Privacy Settings</h3>
             <p className="text-white/80 text-sm leading-relaxed mb-4">
               We use cookies to enhance your experience and analyze site usage. By accepting, you agree to our use of cookies as described in our{' '}
               <a href="/privacy" className="text-brand-orange hover:underline font-semibold">
