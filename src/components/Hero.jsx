@@ -42,7 +42,7 @@ const slides = [
     secondary: { label: 'Support Us', to: '/get-involved#donate' },
   },
   {
-    image: '/projects/ctkSHS.jpg',
+    image: '/projects/edu1.jpg',
     badge: 'Education · 2023',
     headline: 'Empowering Students',
     accent: 'To Reach Their Best.',
@@ -50,7 +50,7 @@ const slides = [
     primary: { label: 'Our Projects', to: '/projects' },
     secondary: { label: 'Volunteer', to: '/get-involved#volunteer' },
   },
-  {
+  //{
     image: '/projects/orphans.jpg',
     badge: 'Outreach · 2023',
     headline: 'Because Every Child',
