@@ -114,7 +114,11 @@ export default function Hero() {
             </h1>
 
             {/* Sub */}
-            <p className="text-base sm:text-lg text-white/80 font-medium mb-10 max-w-md leading-relaxed">
+            <p 
+              className={`text-base sm:text-lg text-white/80 mb-10 max-w-md leading-relaxed ${
+                current === 0 ? 'font-bold' : 'font-medium'
+              }`}
+            >
               {slide.sub}
             </p>
 
