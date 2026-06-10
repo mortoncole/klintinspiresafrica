@@ -19,6 +19,11 @@ const contactLinks = [
   { label: 'Location', to: '/contact' },
 ]
 
+const legalLinks = [
+  { label: 'Privacy Policy', to: '/privacy' },
+  { label: 'Terms of Service', to: '/terms' },
+]
+
 function FooterColumn({ title, links }) {
   return (
     <div className="flex flex-col items-center gap-4">
@@ -68,10 +73,11 @@ export default function Footer() {
         </div>
 
         {/* Link columns */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-14">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-10 mb-14">
           <FooterColumn title="Quick Links" links={quickLinks} />
           <FooterColumn title="Get Involved" links={getInvolvedLinks} />
           <FooterColumn title="Contact" links={contactLinks} />
+          <FooterColumn title="Legal" links={legalLinks} />
         </div>
 
         {/* Copyright */}

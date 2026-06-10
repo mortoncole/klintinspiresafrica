@@ -5,10 +5,14 @@ import Projects from './pages/Projects'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import GetInvolved from './pages/GetInvolved'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import TermsOfService from './pages/TermsOfService'
+import CookieConsent from './components/CookieConsent'
 
 export default function App() {
   return (
     <BrowserRouter>
+      <CookieConsent />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -16,6 +20,8 @@ export default function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/get-involved" element={<GetInvolved />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
       </Routes>
     </BrowserRouter>
   )
