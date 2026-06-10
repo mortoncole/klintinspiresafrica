@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-brand-navy mt-8 mb-4">1. Introduction</h2>
             <p>
-              Klint Inspires Africa Foundation ("we," "us," "our," or "Foundation") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website klintinspiresafrica.org (the "Website") and interact with us through forms, donations, volunteer sign-ups, and other means.
+              Klint Inspires Africa Foundation ("we," "us," "our," or "Foundation") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website klintinspiresafrica.com (the "Website") and interact with us through forms, donations, volunteer sign-ups, and other means.
             </p>
             <p>
               Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our Website. Your continued use of the Website constitutes your acceptance of this Privacy Policy.
@@ -220,7 +220,7 @@ export default function PrivacyPolicy() {
             <div className="bg-brand-orange/5 border border-brand-orange/20 rounded-lg p-6 my-6">
               <p className="font-semibold text-brand-navy mb-2">Klint Inspires Africa Foundation</p>
               <p><strong>Email:</strong> <a href="mailto:klintinspiresafrica@gmail.com">klintinspiresafrica@gmail.com</a></p>
-              <p><strong>Website:</strong> <a href="https://klintinspiresafrica.org">https://klintinspiresafrica.org</a></p>
+              <p><strong>Website:</strong> <a href="https://klintinspiresafrica.org">https://klintinspiresafrica.com</a></p>
               <p className="text-sm text-gray-600 mt-4">We will respond to your inquiry within 30 business days.</p>
             </div>
           </section>
