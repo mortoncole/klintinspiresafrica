@@ -18,7 +18,7 @@ const projects = [
   {
     id: 3,
     title: 'Educational Empowerment',
-    description: 'Yearly food donation outreach to the street & homeless youth.',
+    description: 'Empowering individuals through quality education, skills development, and learning opportunities to unlock their full potential.',
     image: '/projects/education.jpg',
     fallback: 'from-orange-700 to-orange-950',
   },
