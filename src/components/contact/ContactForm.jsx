@@ -9,7 +9,7 @@ const SUBJECTS = [
   'Other',
 ]
 
-const initialState = { name: '', email: '', subject: '', message: '' }
+const initialState = { name: '', email: '', subject: '', message: '', agreedToTerms: false }
 
 function InputField({ label, id, error, children }) {
   return (
@@ -19,6 +19,27 @@ function InputField({ label, id, error, children }) {
       </label>
       {children}
       {error && <p className="text-red-500 text-xs font-medium">{error}</p>}
+    </div>
+  )
+}
+
+function ConsentCheckbox({ label, id, error, checked, onChange }) {
+  return (
+    <div className="flex flex-col gap-1.5">
+      <label htmlFor={id} className="flex items-start gap-3 cursor-pointer">
+        <input
+          id={id}
+          type="checkbox"
+          checked={checked}
+          onChange={onChange}
+          className="w-4 h-4 mt-1 rounded border-gray-300 text-brand-orange focus:ring-brand-orange/50 cursor-pointer"
+        />
+        <span className="text-brand-navy text-sm leading-relaxed">
+          I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-orange hover:underline">Terms of Service</a> and{' '}
+          <a href="/privacy" target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-orange hover:underline">Privacy Policy</a> <span className="text-brand-orange">*</span>
+        </span>
+      </label>
+      {error && <p className="text-red-500 text-xs font-medium ml-7">{error}</p>}
     </div>
   )
 }
@@ -36,6 +57,7 @@ export default function ContactForm() {
     if (!form.subject) e.subject = 'Please select a subject.'
     if (!form.message.trim()) e.message = 'Message cannot be empty.'
     else if (form.message.trim().length < 20) e.message = 'Message must be at least 20 characters.'
+    if (!form.agreedToTerms) e.agreedToTerms = 'You must agree to the Terms and Privacy Policy.'
     return e
   }
 
@@ -142,6 +164,18 @@ export default function ContactForm() {
           className={`${inputClass('message')} resize-none`}
         />
       </InputField>
+
+      {/* Consent Checkbox */}
+      <ConsentCheckbox
+        label="I agree to the Terms and Privacy Policy"
+        id="agreedToTerms"
+        error={errors.agreedToTerms}
+        checked={form.agreedToTerms}
+        onChange={(e) => {
+          setForm((f) => ({ ...f, agreedToTerms: e.target.checked }))
+          setErrors((err) => ({ ...err, agreedToTerms: undefined }))
+        }}
+      />
 
       {/* Error banner */}
       {status === 'error' && (

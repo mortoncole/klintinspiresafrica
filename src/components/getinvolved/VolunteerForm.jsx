@@ -8,7 +8,7 @@ const SKILLS = [
 
 const AVAILABILITY = ['Weekdays', 'Weekends', 'Both', 'Flexible']
 
-const initial = { name: '', phone: '', email: '', location: '', skills: [], availability: '', message: '' }
+const initial = { name: '', phone: '', email: '', location: '', skills: [], availability: '', message: '', agreedToTerms: false }
 
 export default function VolunteerForm() {
   const [form, setForm] = useState(initial)
@@ -32,6 +32,7 @@ export default function VolunteerForm() {
     if (!form.location.trim()) e.location = 'Required.'
     if (!form.skills.length) e.skills = 'Pick at least one skill.'
     if (!form.availability) e.availability = 'Required.'
+    if (!form.agreedToTerms) e.agreedToTerms = 'You must agree to the Terms and Privacy Policy.'
     return e
   }
 
@@ -151,6 +152,27 @@ export default function VolunteerForm() {
         <label className="block text-sm font-semibold text-brand-navy mb-1.5">Why do you want to volunteer? <span className="text-gray-400 font-normal">(optional)</span></label>
         <textarea name="message" rows={4} placeholder="Tell us a little about your motivation…" value={form.message} onChange={handleChange}
           className={`${inputCls('message')} resize-none`} />
+      </div>
+
+      {/* Consent Checkbox */}
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="agreedToTerms" className="flex items-start gap-3 cursor-pointer">
+          <input
+            id="agreedToTerms"
+            type="checkbox"
+            checked={form.agreedToTerms}
+            onChange={(e) => {
+              setForm((f) => ({ ...f, agreedToTerms: e.target.checked }))
+              setErrors((err) => ({ ...err, agreedToTerms: undefined }))
+            }}
+            className="w-4 h-4 mt-1 rounded border-gray-300 text-brand-orange focus:ring-brand-orange/50 cursor-pointer"
+          />
+          <span className="text-brand-navy text-sm leading-relaxed">
+            I agree to the <a href="/terms" target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-orange hover:underline">Terms of Service</a> and{' '}
+            <a href="/privacy" target="_blank" rel="noopener noreferrer" className="font-semibold text-brand-orange hover:underline">Privacy Policy</a> <span className="text-brand-orange">*</span>
+          </span>
+        </label>
+        {errors.agreedToTerms && <p className="text-red-500 text-xs mt-1 ml-7">{errors.agreedToTerms}</p>}
       </div>
 
       {status === 'error' && (
