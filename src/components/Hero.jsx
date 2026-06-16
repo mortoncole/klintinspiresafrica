@@ -11,7 +11,7 @@ const slides = [
     headline: 'African Young Leaders',
     accent: 'Summit.',
     sub: 'SAT. 29TH AUG at COFKANS CONFERENCE HALL — Join us for the inaugural African Young Leaders Summit: "The Future is Now: Developing Africa\'s Next Generation of Leaders and Policymakers." Free registration, limited slots.',
-    primary: { label: 'Register Now', href: 'https://forms.gle/vUeZvRP4W5mFs4F77', isExternal: true },
+    primary: { label: 'Register Now', href: 'https://forms.gle/ij8TcTPQU5gz8QAZA', isExternal: true },
     secondary: null,
   },
   {
