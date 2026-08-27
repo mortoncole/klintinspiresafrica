@@ -9,10 +9,10 @@ const slides = [
     image: '/AYLS.jpg',
     badge: 'Summit · August 2026',
     headline: 'African Young Leaders',
-    accent: 'Summit.',
-    sub: 'SAT. 29TH AUG at COFKANS CONFERENCE HALL — Join us for the inaugural African Young Leaders Summit: "The Future is Now: Developing Africa\'s Next Generation of Leaders and Policymakers." Free registration, limited slots.',
-    primary: { label: 'Register Now', href: 'https://forms.gle/ij8TcTPQU5gz8QAZA', isExternal: true },
-    secondary: null,
+    accent: 'Summit Concluded.',
+    sub: 'A historic inaugural event at St. Thomas Social Center in Obuasi bringing together youth, leaders, and changemakers. Massive turnout, powerful keynotes, and lasting impact on the next generation of African leaders.',
+    primary: { label: 'View Event Highlights', to: '/projects' },
+    secondary: { label: 'See the Impact', to: '/gallery' },
   },
   {
     image: '/gallery/padagirl/wide5.JPG',
@@ -129,7 +129,7 @@ export default function Hero() {
                   href={slide.primary.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-7 py-3 rounded-full bg-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide hover:bg-brand-orange-dark transition-colors duration-200 shadow-lg animate-pulse_cta"
+                  className="px-7 py-3 rounded-full bg-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide hover:bg-brand-orange-dark transition-colors duration-200 shadow-lg"
                 >
                   {slide.primary.label}
                 </a>
@@ -144,7 +144,7 @@ export default function Hero() {
               {slide.secondary && (
                 <Link
                   to={slide.secondary.to}
-                  className="px-7 py-3 rounded-full border-2 border-white/40 hover:border-brand-orange hover:text-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide transition-all duration-200"
+                  className="px-7 py-3 rounded-full border-2 border-white/40 hover:border-brand-orange hover:text-brand-orange text-white font-bold text-sm sm:text-base uppercase tracking-wide transition-colors duration-200"
                 >
                   {slide.secondary.label}
                 </Link>
