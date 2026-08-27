@@ -7,7 +7,7 @@ export const projects = [
     title: 'African Young Leaders Summit',
     category: 'Summit',
     description:
-      'The inaugural African Young Leaders Summit held in Obuasi on August 22, 2026: "The Future is Now: Developing Africa\'s Next Generation of Leaders and Policymakers." A historic gathering bringing together youth, prominent keynote speakers, government officials, and changemakers to inspire and empower the next generation of African leaders.',
+      'The inaugural African Young Leaders Summit held at St. Thomas Social Center in Obuasi on August 22, 2026: "The Future is Now: Developing Africa\'s Next Generation of Leaders and Policymakers." A historic gathering bringing together youth, prominent keynote speakers, government officials, and changemakers to inspire and empower the next generation of African leaders.',
     image: '/AYLS.jpg',
     fallback: 'from-blue-600 to-blue-950',
     impact: 'Massive Youth Turnout',
@@ -22,11 +22,13 @@ export const projects = [
       'Future leaders and policymakers gathering',
     ],
     partners: [
-      'COFKANS Conference Hall',
-      'Anglogold Ashanti',
+      'National Youth Authority Ghana (NYA)',
+      'Youth Employment Agency (YEA)',
+      'Obuasi Nananom Association',
+      'PN Media',
+      'Oyerepa TV',
       'Godfred Acheampong Foundation',
-      'Rotary Ghana',
-      'BACNOF Schools',
+      'A.A Foundation',
     ],
   },
 
