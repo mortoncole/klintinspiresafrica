@@ -1,19 +1,48 @@
-export const categories = ['All', 'Outreach', 'Education', 'Health', 'Community']
+export const categories = ['All', 'Outreach', 'Education', 'Health', 'Community', 'Summit']
 
 export const projects = [
-  // ─── FEATURED (upcoming) ───────────────────────────────────────────────────
+  // ─── FEATURED ───────────────────────────────────────────────────────
+  {
+    id: 10,
+    title: 'African Young Leaders Summit',
+    category: 'Summit',
+    description:
+      'The inaugural African Young Leaders Summit held in Obuasi on August 22, 2026: "The Future is Now: Developing Africa\'s Next Generation of Leaders and Policymakers." A historic gathering bringing together youth, prominent keynote speakers, government officials, and changemakers to inspire and empower the next generation of African leaders.',
+    image: '/AYLS.jpg',
+    fallback: 'from-blue-600 to-blue-950',
+    impact: 'Massive Youth Turnout',
+    year: '2026',
+    date: 'August 22, 2026',
+    featured: true,
+    upcoming: false,
+    activities: [
+      'Keynote speeches from national and international leaders',
+      'Youth empowerment and policy dialogue',
+      'Networking and mentorship opportunities',
+      'Future leaders and policymakers gathering',
+    ],
+    partners: [
+      'COFKANS Conference Hall',
+      'Anglogold Ashanti',
+      'Godfred Acheampong Foundation',
+      'Rotary Ghana',
+      'BACNOF Schools',
+    ],
+  },
+
+  // ─── PAST PROJECTS ───────────────────────────────────────────────────────
   {
     id: 7,
     title: 'Pad a Girl Outreach',
     category: 'Health',
     description:
-      'We reached 500+ JHS girls at the Independence School Park, Obuasi East — donating sanitary pads, educating girls on menstrual hygiene, and empowering them with the knowledge and materials to thrive.',
+      'We reached 500+ JHS girls at the Independence School Park, Obuasi East — donating sanitary pads, educating girls on menstrual hygiene, and empowering them with the knowledge and materials they need to stay healthy and in school.',
     image: '/gallery/padagirl/crowd.JPG',
     fallback: 'from-purple-600 to-purple-950',
     impact: '500+ Girls Reached',
     year: '2026',
     date: 'May 26, 2026',
-    featured: true,
+    featured: false,
     upcoming: false,
     activities: [
       'Menstrual Hygiene Education',
@@ -27,8 +56,6 @@ export const projects = [
       'A.A Foundation',
     ],
   },
-
-  // ─── PAST PROJECTS ────────────────────────────────────────────────────────
   {
     id: 1,
     title: 'Streetmas 2.0 Outreach',
