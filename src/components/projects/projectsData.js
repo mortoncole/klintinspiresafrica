@@ -27,6 +27,7 @@ export const projects = [
       'Obuasi Nananom Association',
       'PN Media',
       'Oyerepa TV',
+      'Jachin Foods',
       'Godfred Acheampong Foundation',
       'A.A Foundation',
     ],
