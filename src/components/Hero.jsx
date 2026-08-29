@@ -11,7 +11,7 @@ const slides = [
     headline: 'African Young Leaders',
     accent: 'Summit Concluded.',
     sub: 'A historic inaugural event at St. Thomas Social Center in Obuasi bringing together youth, leaders, and changemakers. Massive turnout, powerful keynotes, and lasting impact on the next generation of African leaders.',
-    primary: { label: 'View Event Highlights', to: '/projects' },
+    primary: { label: 'View Event Highlights', to: '/gallery/ayls' },
     secondary: { label: 'See the Impact', to: '/gallery' },
   },
   {
