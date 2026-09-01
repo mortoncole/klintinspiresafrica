@@ -122,6 +122,141 @@ const galleryCategories = [
   },
 ]
 
+const highlights = [
+  {
+    id: 'opening-keynote',
+    title: 'Opening Keynote Address',
+    image: '/gallery/AYLS/keynote-speakers/sam-pobee.jpg',
+    content: (
+      <p>
+        Ing. Sam Pobee, Managing Director of Anglogold Ashanti - Obuasi Mine,
+        delivered a powerful keynote that set the tone for the entire summit,
+        speaking to the importance of youth involvement in industry and
+        nation-building.
+      </p>
+    ),
+  },
+  {
+    id: 'inspiring-opening',
+    title: 'Inspiring Opening',
+    image: null,
+    content: (
+      <p>
+        The summit was beautifully opened with an engaging rendition of{' '}
+        <em>"We are the chosen generation"</em> by Sinach, setting a spiritual
+        and motivational tone for the youth.
+      </p>
+    ),
+  },
+  {
+    id: 'panel-discussions',
+    title: 'Three Transformative Panel Discussions',
+    image: null,
+    content: (
+      <ul className="space-y-2 ml-4">
+        <li>
+          <strong>Personal Branding & Agribusiness:</strong> Youth learned how
+          to brand themselves and leverage opportunities in Africa's growing
+          agricultural sector.
+        </li>
+        <li>
+          <strong>Leadership & Youth Development:</strong> Leading voices
+          discussed how young people can develop as leaders and contribute
+          meaningfully to their communities.
+        </li>
+        <li>
+          <strong>Governance & Public Policy:</strong> Policymakers shared
+          insights on how youth can engage with governance and shape public
+          policy.
+        </li>
+      </ul>
+    ),
+  },
+  {
+    id: 'faustilove',
+    title: 'Message from Hon. Faustilove Appiah Kanin',
+    image: '/gallery/AYLS/guest-speakers/faustilove-appiah.jpg',
+    content: (
+      <p>
+        The Municipal Chief Executive of Obuasi West delivered a moving speech
+        that emphasized:{' '}
+        <em>
+          "Leadership is not only about holding office, it is about service,
+          understanding the needs of people, solving problems, and taking
+          responsibility."
+        </em>{' '}
+        She challenged youth to make a difference through various channels
+        without waiting for formal positions.
+      </p>
+    ),
+  },
+  {
+    id: 'cultural-performances',
+    title: 'Cultural Performances',
+    image: null,
+    content: (
+      <p>
+        Moving drama and spoken word performances captured Africa's journey,
+        from colonialism to freedom, leaving audiences inspired and reflective
+        about the continent's past and bright future.
+      </p>
+    ),
+  },
+  {
+    id: 'networking',
+    title: 'Networking & Connection',
+    image: null,
+    content: (
+      <p>
+        Beyond speeches, the summit featured connection sessions, business
+        stands, and art displays outside the auditorium, allowing youth to
+        network with speakers, entrepreneurs, and each other.
+      </p>
+    ),
+  },
+]
+
+function UserIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4.42 0-8 2.24-8 5v1a1 1 0 001 1h14a1 1 0 001-1v-1c0-2.76-3.58-5-8-5z" />
+    </svg>
+  )
+}
+
+function HighlightCard({ highlight }) {
+  return (
+    <div className="relative group bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+      {/* Left avatar "text bubble" anchored on the orange edge */}
+      <div className="absolute -left-7 top-1/2 -translate-y-1/2 z-10">
+        {/* Bubble tail pointing right */}
+        <div className="w-0 h-0 border-y-[8px] border-y-transparent border-l-[8px] border-l-white absolute left-[calc(100%-1px)] top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+        <div
+          className="relative w-14 h-14 rounded-full border-2 border-brand-orange bg-brand-navy text-brand-orange flex items-center justify-center shadow-lg overflow-hidden opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100 group-hover:animate-bubble_pop transition-all duration-300 origin-left"
+        >
+          {highlight.image ? (
+            <img
+              src={highlight.image}
+              alt={highlight.title}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.style.display = 'none'
+              }}
+            />
+          ) : (
+            <span className="w-6 h-6">
+              <UserIcon />
+            </span>
+          )}
+        </div>
+      </div>
+
+      <h4 className="font-bold text-brand-navy mb-2 pl-3">{highlight.title}</h4>
+      <div className="pl-3">{highlight.content}</div>
+    </div>
+  )
+}
+
 export default function AYLSGallery() {
   return (
     <div className="min-h-screen">
@@ -189,48 +324,10 @@ export default function AYLSGallery() {
 
             <h3 className="text-2xl font-bold text-brand-navy mt-10 mb-4">Highlights of the Day</h3>
 
-            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
-              <h4 className="font-bold text-brand-navy mb-2">Opening Keynote Address</h4>
-              <p>
-                Ing. Sam Pobee, Managing Director of Anglogold Ashanti - Obuasi Mine, delivered a powerful keynote that set the tone for the entire summit, speaking to the importance of youth involvement in industry and nation-building.
-              </p>
-            </div>
-
-            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
-              <h4 className="font-bold text-brand-navy mb-2">Inspiring Opening</h4>
-              <p>
-                The summit was beautifully opened with an engaging rendition of <em>"We are the chosen generation"</em> by Sinach, setting a spiritual and motivational tone for the youth.
-              </p>
-            </div>
-
-            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
-              <h4 className="font-bold text-brand-navy mb-2">Three Transformative Panel Discussions</h4>
-              <ul className="space-y-2 ml-4">
-                <li><strong>Personal Branding & Agribusiness:</strong> Youth learned how to brand themselves and leverage opportunities in Africa's growing agricultural sector.</li>
-                <li><strong>Leadership & Youth Development:</strong> Leading voices discussed how young people can develop as leaders and contribute meaningfully to their communities.</li>
-                <li><strong>Governance & Public Policy:</strong> Policymakers shared insights on how youth can engage with governance and shape public policy.</li>
-              </ul>
-            </div>
-
-            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
-              <h4 className="font-bold text-brand-navy mb-2">Message from Hon. Faustilove Appiah Kanin</h4>
-              <p>
-                The Municipal Chief Executive of Obuasi West delivered a moving speech that emphasized: <em>"Leadership is not only about holding office, it is about service, understanding the needs of people, solving problems, and taking responsibility."</em> She challenged youth to make a difference through various channels without waiting for formal positions.
-              </p>
-            </div>
-
-            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
-              <h4 className="font-bold text-brand-navy mb-2">Cultural Performances</h4>
-              <p>
-                Moving drama and spoken word performances captured Africa's journey, from colonialism to freedom, leaving audiences inspired and reflective about the continent's past and bright future.
-              </p>
-            </div>
-
-            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
-              <h4 className="font-bold text-brand-navy mb-2">Networking & Connection</h4>
-              <p>
-                Beyond speeches, the summit featured connection sessions, business stands, and art displays outside the auditorium, allowing youth to network with speakers, entrepreneurs, and each other.
-              </p>
+            <div className="space-y-6">
+              {highlights.map((highlight) => (
+                <HighlightCard key={highlight.id} highlight={highlight} />
+              ))}
             </div>
 
             <p className="text-lg mt-10 italic text-gray-600">

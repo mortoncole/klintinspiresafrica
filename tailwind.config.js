@@ -26,11 +26,17 @@ export default {
           '0%': { width: '0%' },
           '100%': { width: '100%' },
         },
+        bubble_pop: {
+          '0%': { opacity: '0', transform: 'scale(0.4) translateY(6px)' },
+          '70%': { opacity: '1', transform: 'scale(1.08) translateY(0)' },
+          '100%': { opacity: '1', transform: 'scale(1) translateY(0)' },
+        },
       },
       animation: {
         pulse_cta: 'pulse_cta 2s ease-in-out infinite',
         slide_up: 'slide_up 0.65s ease-out forwards',
         hero_progress: 'hero_progress 5s linear forwards',
+        bubble_pop: 'bubble_pop 0.4s ease-out forwards',
       },
     },
   },
