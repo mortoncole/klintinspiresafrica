@@ -15,7 +15,7 @@ export default function ProjectsCTA() {
           Want to Support a Project?
         </h2>
         <p className="text-white/55 text-base sm:text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          Your contribution — whether financial, voluntary, or in-kind — directly fuels our next outreach and changes real lives on the ground.
+          Your contribution, whether financial, voluntary, or in-kind, directly fuels our next outreach and changes real lives on the ground.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link

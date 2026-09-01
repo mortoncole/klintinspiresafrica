@@ -57,7 +57,7 @@ export default function ImpactStory() {
             <blockquote className="text-brand-navy font-bold text-base sm:text-lg leading-relaxed max-w-lg">
               During our Streetmas outreach in Accra, we met children who had
               never received a packaged meal before. That day, we didn&apos;t just
-              give food — we gave hope, dignity, and a reason to smile.
+              give food, we gave hope, dignity, and a reason to smile.
             </blockquote>
 
             <Link

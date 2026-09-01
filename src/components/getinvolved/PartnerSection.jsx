@@ -2,22 +2,18 @@ import { Link } from 'react-router-dom'
 
 const types = [
   {
-    icon: '💰',
     title: 'Financial Partner',
-    desc: 'Fund our projects directly — from single outreaches to annual programmes. We provide full transparency reports.',
+    desc: 'Fund our projects directly, from single outreaches to annual programmes. We provide full transparency reports.',
   },
   {
-    icon: '🎁',
     title: 'In-Kind Donor',
-    desc: 'Donate goods — food items, stationery, sanitary supplies, clothing — that go straight to beneficiaries.',
+    desc: 'Donate goods such as food items, stationery, sanitary supplies, and clothing that go straight to beneficiaries.',
   },
   {
-    icon: '📢',
     title: 'Media & Awareness',
     desc: 'Help us amplify our message through your platform, network, or publication to reach more supporters.',
   },
   {
-    icon: '🤝',
     title: 'Organisational Partner',
     desc: 'Collaborate on joint projects, co-host events, or integrate our mission into your CSR initiatives.',
   },
@@ -38,15 +34,11 @@ export default function PartnerSection() {
 
         {/* Partnership type cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-14">
-          {types.map(({ icon, title, desc }) => (
+          {types.map(({ title, desc }) => (
             <div key={title}
               className="group flex gap-5 p-6 rounded-2xl border border-gray-100 bg-gray-50
                          hover:border-brand-orange/40 hover:bg-brand-orange/5 hover:shadow-md transition-all duration-300">
-              <div className="w-12 h-12 rounded-xl bg-white border border-gray-100 group-hover:bg-brand-orange
-                              flex items-center justify-center text-2xl flex-shrink-0 shadow-sm
-                              transition-colors duration-300">
-                {icon}
-              </div>
+              <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2 flex-shrink-0" />
               <div>
                 <h3 className="font-extrabold text-brand-navy text-base mb-1 group-hover:text-brand-orange transition-colors duration-200">
                   {title}

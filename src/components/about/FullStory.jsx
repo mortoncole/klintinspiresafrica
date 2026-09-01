@@ -1,8 +1,8 @@
 const paragraphs = [
   `Coming from a background where hope was scarce, raised by a single parent, life was never handed to us easily. Every step forward came through struggle, resilience, and the determination to rise above our circumstances.`,
-  `Looking back today, we recognize that our journey is not just ours to celebrate — it is a responsibility to give back. We see many young people walking the same difficult path we once walked. And we believe the greatest way to make an impact is not just to succeed, but to reach back and pull others along.`,
+  `Looking back today, we recognize that our journey is not just ours to celebrate, it is a responsibility to give back. We see many young people walking the same difficult path we once walked. And we believe the greatest way to make an impact is not just to succeed, but to reach back and pull others along.`,
   `What began as a personal journey has grown into a shared mission to ignite hope, inspire belief, and empower young people to see that their story can be different.`,
-  `At Klint Inspires Africa Foundation, we are driven by a simple but powerful vision — reaching one person at a time, and reminding them of what is possible.`,
+  `At Klint Inspires Africa Foundation, we are driven by a simple but powerful vision, reaching one person at a time, and reminding them of what is possible.`,
   `We want every young person we encounter to believe:`,
 ]
 

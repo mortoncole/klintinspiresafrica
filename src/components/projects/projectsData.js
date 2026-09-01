@@ -39,7 +39,7 @@ export const projects = [
     title: 'Pad a Girl Outreach',
     category: 'Health',
     description:
-      'We reached 500+ JHS girls at the Independence School Park, Obuasi East — donating sanitary pads, educating girls on menstrual hygiene, and empowering them with the knowledge and materials they need to stay healthy and in school.',
+      'We reached 500+ JHS girls at the Independence School Park, Obuasi East, donating sanitary pads, educating girls on menstrual hygiene, and empowering them with the knowledge and materials they need to stay healthy and in school.',
     image: '/gallery/padagirl/crowd.JPG',
     fallback: 'from-purple-600 to-purple-950',
     impact: '500+ Girls Reached',
@@ -64,7 +64,7 @@ export const projects = [
     title: 'Streetmas 2.0 Outreach',
     category: 'Outreach',
     description:
-      'Our second annual food donation and gift outreach to street-connected and homeless youth across Accra — bigger, bolder, and more impactful than ever.',
+      'Our second annual food donation and gift outreach to street-connected and homeless youth across Accra, bigger, bolder, and more impactful than ever.',
     image: '/projects/streetmas2.jpg',
     fallback: 'from-gray-600 to-gray-900',
     impact: '1000+ Beneficiaries',
@@ -77,7 +77,7 @@ export const projects = [
     title: 'Streetmas 1.0 Outreach',
     category: 'Outreach',
     description:
-      'The outreach that started it all — delivering meals, gifts, and hope to homeless youth on the streets during the festive season.',
+      'The outreach that started it all, delivering meals, gifts, and hope to homeless youth on the streets during the festive season.',
     image: '/projects/streetmas1.jpg',
     fallback: 'from-amber-700 to-amber-950',
     impact: '500+ Beneficiaries',
@@ -90,7 +90,7 @@ export const projects = [
     title: 'Elite Day With the Orphans',
     category: 'Outreach',
     description:
-      'An interactive, educative, and donation session at the Adullam Orphanage in Obuasi — spending quality time with the children, sharing gifts, and giving them a day to remember.',
+      'An interactive, educative, and donation session at the Adullam Orphanage in Obuasi, spending quality time with the children, sharing gifts, and giving them a day to remember.',
     image: '/projects/orphans.jpg',
     fallback: 'from-rose-500 to-rose-900',
     impact: 'Adullam Orphanage',
@@ -103,7 +103,7 @@ export const projects = [
     title: 'Christ the King SHS Empowerment',
     category: 'Education',
     description:
-      'A powerful empowerment session with final year students at Christ the King Senior High School, Obuasi — preparing them for their WASSCE exams and donating educational supplies.',
+      'A powerful empowerment session with final year students at Christ the King Senior High School, Obuasi, preparing them for their WASSCE exams and donating educational supplies.',
     image: '/projects/ctkSHS.jpg',
     fallback: 'from-indigo-500 to-indigo-900',
     impact: 'Final Year Students',

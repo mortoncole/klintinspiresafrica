@@ -11,7 +11,7 @@ export default function Projects() {
     <div className="min-h-screen">
       <SEO
         title="Our Projects"
-        description="Explore Klint Inspires Africa's community initiatives — Streetmas, Pad a Girl, Back to School Drive, and health outreach programs changing lives across Ghana."
+        description="Explore Klint Inspires Africa's community initiatives, Streetmas, Pad a Girl, Back to School Drive, and health outreach programs changing lives across Ghana."
         path="/projects"
       />
       <Navbar />

@@ -46,10 +46,10 @@ const platforms = [
 ]
 
 const actions = [
-  { emoji: '📸', text: 'Tag us in your posts — @klintinspiresafrica' },
-  { emoji: '🗣️', text: 'Tell friends and family about our work' },
-  { emoji: '📲', text: 'Share our content on your stories and feed' },
-  { emoji: '🌍', text: 'Advocate for youth empowerment in your community' },
+  { text: 'Tag us in your posts, @klintinspiresafrica' },
+  { text: 'Tell friends and family about our work' },
+  { text: 'Share our content on your stories and feed' },
+  { text: 'Advocate for youth empowerment in your community' },
 ]
 
 export default function SpreadSection() {
@@ -85,9 +85,9 @@ export default function SpreadSection() {
           <div>
             <p className="text-brand-navy font-bold text-sm uppercase tracking-widest mb-5">Other Ways to Help</p>
             <ul className="space-y-4">
-              {actions.map(({ emoji, text }) => (
+              {actions.map(({ text }) => (
                 <li key={text} className="flex items-start gap-3">
-                  <span className="text-xl flex-shrink-0">{emoji}</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2 flex-shrink-0" />
                   <span className="text-gray-600 text-sm leading-relaxed font-medium">{text}</span>
                 </li>
               ))}

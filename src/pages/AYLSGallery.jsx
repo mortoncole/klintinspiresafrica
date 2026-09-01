@@ -66,7 +66,7 @@ const guests = [
   {
     name: 'Hon. Dr. Stephen Amoah',
     title: 'Member of Parliament',
-    subtitle: 'Nhyiaeso Constituency | Former Dep. Ranking Member Finance Committee',
+    subtitle: 'Nhyiaeso Constituency, Former Dep. Ranking Member Finance Committee',
     image: '/gallery/AYLS/guest-speakers/stephen-amoah.jpg',
   },
   {
@@ -134,31 +134,39 @@ export default function AYLSGallery() {
       <div className="h-24" />
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900">
-        <div className="max-w-6xl mx-auto text-center text-white">
-          <span className="inline-block text-blue-200 text-sm font-bold uppercase tracking-widest mb-4 border border-blue-300 rounded-full px-4 py-2">
-            Event Gallery · August 22, 2026
+      <section className="relative py-20 px-4 bg-brand-navy overflow-hidden">
+        {/* Orange top bar */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-orange via-orange-400 to-transparent" />
+
+        {/* Decorative rings */}
+        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full border border-brand-orange/10" />
+        <div className="absolute -top-12 -right-12 w-64 h-64 rounded-full border border-brand-orange/10" />
+        <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full border border-white/5" />
+
+        <div className="relative max-w-6xl mx-auto text-center text-white">
+          <span className="inline-block text-brand-orange text-sm font-bold uppercase tracking-widest mb-4 border border-brand-orange/40 rounded-full px-4 py-2">
+            Event Gallery, August 22, 2026
           </span>
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
             African Young Leaders Summit
           </h1>
-          <p className="text-xl md:text-2xl font-bold text-blue-100 mb-2">
+          <p className="text-xl md:text-2xl font-bold text-white/80 mb-2">
             "The Future is Now: Developing Africa's Next Generation of Leaders and Policymakers"
           </p>
-          <p className="text-lg text-blue-200 mb-8 max-w-3xl mx-auto">
-            The inaugural empowerment summit held at St. Thomas Social Center, Obuasi — bringing together 800+ youth, 12+ speakers, government officials, and changemakers to inspire the next generation of African leaders.
+          <p className="text-lg text-white/60 mb-8 max-w-3xl mx-auto">
+            The inaugural empowerment summit held at St. Thomas Social Center, Obuasi, bringing together 800+ youth, 12+ speakers, government officials, and changemakers to inspire the next generation of African leaders.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl px-6 py-4">
-              <p className="text-blue-200 text-sm uppercase tracking-wide">Youth Attended</p>
+              <p className="text-white/60 text-sm uppercase tracking-wide">Youth Attended</p>
               <p className="text-4xl font-extrabold text-brand-orange">800+</p>
             </div>
             <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl px-6 py-4">
-              <p className="text-blue-200 text-sm uppercase tracking-wide">Speakers</p>
+              <p className="text-white/60 text-sm uppercase tracking-wide">Speakers</p>
               <p className="text-4xl font-extrabold text-brand-orange">12+</p>
             </div>
             <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl px-6 py-4">
-              <p className="text-blue-200 text-sm uppercase tracking-wide">Panel Sessions</p>
+              <p className="text-white/60 text-sm uppercase tracking-wide">Panel Sessions</p>
               <p className="text-4xl font-extrabold text-brand-orange">3</p>
             </div>
           </div>
@@ -172,31 +180,31 @@ export default function AYLSGallery() {
 
           <div className="space-y-6 text-gray-700 leading-relaxed">
             <p className="text-lg">
-              On August 22, 2026, Obuasi witnessed history as Klint Inspires Africa hosted the inaugural African Young Leaders Summit — a groundbreaking empowerment event that brought together over 800 young minds, influential speakers, government officials, and changemakers under one roof.
+              On August 22, 2026, Obuasi witnessed history as Klint Inspires Africa hosted the inaugural African Young Leaders Summit, a groundbreaking empowerment event that brought together over 800 young minds, influential speakers, government officials, and changemakers under one roof.
             </p>
 
             <p className="text-lg">
-              <span className="font-bold text-brand-navy">The theme,</span> <em>"The Future is Now: Developing Africa's Next Generation of Leaders and Policymakers,"</em> resonated deeply throughout the day, inspiring youth to realize that they don't have to wait until they're ministers or parliamentarians to make a difference — they can contribute now through youth organizations, community initiatives, civil society, entrepreneurship, research, and technology.
+              <span className="font-bold text-brand-navy">The theme,</span> <em>"The Future is Now: Developing Africa's Next Generation of Leaders and Policymakers,"</em> resonated deeply throughout the day, inspiring youth to realize that they don't have to wait until they're ministers or parliamentarians to make a difference. They can contribute now through youth organizations, community initiatives, civil society, entrepreneurship, research, and technology.
             </p>
 
             <h3 className="text-2xl font-bold text-brand-navy mt-10 mb-4">Highlights of the Day</h3>
 
-            <div className="bg-blue-50 border-l-4 border-brand-orange p-6 rounded">
-              <h4 className="font-bold text-brand-navy mb-2">🎤 Opening Keynote Address</h4>
+            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+              <h4 className="font-bold text-brand-navy mb-2">Opening Keynote Address</h4>
               <p>
                 Ing. Sam Pobee, Managing Director of Anglogold Ashanti - Obuasi Mine, delivered a powerful keynote that set the tone for the entire summit, speaking to the importance of youth involvement in industry and nation-building.
               </p>
             </div>
 
-            <div className="bg-blue-50 border-l-4 border-brand-orange p-6 rounded">
-              <h4 className="font-bold text-brand-navy mb-2">🎵 Inspiring Opening</h4>
+            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+              <h4 className="font-bold text-brand-navy mb-2">Inspiring Opening</h4>
               <p>
                 The summit was beautifully opened with an engaging rendition of <em>"We are the chosen generation"</em> by Sinach, setting a spiritual and motivational tone for the youth.
               </p>
             </div>
 
-            <div className="bg-blue-50 border-l-4 border-brand-orange p-6 rounded">
-              <h4 className="font-bold text-brand-navy mb-2">📊 Three Transformative Panel Discussions</h4>
+            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+              <h4 className="font-bold text-brand-navy mb-2">Three Transformative Panel Discussions</h4>
               <ul className="space-y-2 ml-4">
                 <li><strong>Personal Branding & Agribusiness:</strong> Youth learned how to brand themselves and leverage opportunities in Africa's growing agricultural sector.</li>
                 <li><strong>Leadership & Youth Development:</strong> Leading voices discussed how young people can develop as leaders and contribute meaningfully to their communities.</li>
@@ -204,29 +212,29 @@ export default function AYLSGallery() {
               </ul>
             </div>
 
-            <div className="bg-blue-50 border-l-4 border-brand-orange p-6 rounded">
-              <h4 className="font-bold text-brand-navy mb-2">💬 Message from Hon. Faustilove Appiah Kanin</h4>
+            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+              <h4 className="font-bold text-brand-navy mb-2">Message from Hon. Faustilove Appiah Kanin</h4>
               <p>
                 The Municipal Chief Executive of Obuasi West delivered a moving speech that emphasized: <em>"Leadership is not only about holding office, it is about service, understanding the needs of people, solving problems, and taking responsibility."</em> She challenged youth to make a difference through various channels without waiting for formal positions.
               </p>
             </div>
 
-            <div className="bg-blue-50 border-l-4 border-brand-orange p-6 rounded">
-              <h4 className="font-bold text-brand-navy mb-2">🎭 Cultural Performances</h4>
+            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+              <h4 className="font-bold text-brand-navy mb-2">Cultural Performances</h4>
               <p>
-                Moving drama and spoken word performances captured Africa's journey — from colonialism to freedom — leaving audiences inspired and reflective about the continent's past and bright future.
+                Moving drama and spoken word performances captured Africa's journey, from colonialism to freedom, leaving audiences inspired and reflective about the continent's past and bright future.
               </p>
             </div>
 
-            <div className="bg-blue-50 border-l-4 border-brand-orange p-6 rounded">
-              <h4 className="font-bold text-brand-navy mb-2">🤝 Networking & Connection</h4>
+            <div className="bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+              <h4 className="font-bold text-brand-navy mb-2">Networking & Connection</h4>
               <p>
                 Beyond speeches, the summit featured connection sessions, business stands, and art displays outside the auditorium, allowing youth to network with speakers, entrepreneurs, and each other.
               </p>
             </div>
 
             <p className="text-lg mt-10 italic text-gray-600">
-              The entire day was magical and magnificent — a testament to the power of bringing together passionate youth and dedicated leaders around a shared vision of African excellence.
+              The entire day was magical and magnificent, a testament to the power of bringing together passionate youth and dedicated leaders around a shared vision of African excellence.
             </p>
           </div>
         </div>
@@ -242,13 +250,13 @@ export default function AYLSGallery() {
             {speakers.map((speaker, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="aspect-square bg-gradient-to-br from-blue-400 to-indigo-600 overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-brand-navy to-slate-800 overflow-hidden">
                   <img
                     src={speaker.image}
                     alt={speaker.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
                       e.target.style.display = 'none'
                     }}
@@ -258,7 +266,7 @@ export default function AYLSGallery() {
                   <p className="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">
                     {speaker.role}
                   </p>
-                  <h3 className="text-lg font-bold text-brand-navy mb-1">
+                  <h3 className="text-lg font-bold text-brand-navy mb-1 group-hover:text-brand-orange transition-colors duration-200">
                     {speaker.name}
                   </h3>
                   <p className="text-sm text-gray-600 font-medium mb-2">
@@ -284,13 +292,13 @@ export default function AYLSGallery() {
             {guests.map((guest, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
-                <div className="aspect-square bg-gradient-to-br from-orange-400 to-red-600 overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-brand-orange to-orange-700 overflow-hidden">
                   <img
                     src={guest.image}
                     alt={guest.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     onError={(e) => {
                       e.target.style.display = 'none'
                     }}
@@ -300,7 +308,7 @@ export default function AYLSGallery() {
                   <p className="text-xs font-bold text-brand-orange uppercase tracking-widest mb-2">
                     Guest of Honour
                   </p>
-                  <h3 className="text-lg font-bold text-brand-navy mb-1">
+                  <h3 className="text-lg font-bold text-brand-navy mb-1 group-hover:text-brand-orange transition-colors duration-200">
                     {guest.name}
                   </h3>
                   <p className="text-sm text-gray-600 font-medium mb-2">
@@ -334,17 +342,17 @@ export default function AYLSGallery() {
                 </p>
               </div>
 
-              {/* Placeholder for image grid */}
+              {/* Image grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[...Array(6)].map((_, i) => (
                   <div
                     key={i}
-                    className="aspect-video bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
+                    className="group aspect-video bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
                   >
                     <img
                       src={`/gallery/AYLS/${category.folder}/image-${i + 1}.jpg`}
                       alt={`${category.title} - Image ${i + 1}`}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => {
                         e.target.parentElement.innerHTML =
                           '<div class="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">Image not found</div>'
@@ -359,24 +367,24 @@ export default function AYLSGallery() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-blue-900 to-indigo-900">
+      <section className="py-20 px-4 bg-brand-navy">
         <div className="max-w-3xl mx-auto text-center text-white">
           <h2 className="text-4xl font-extrabold mb-4">
             Be Part of the Movement
           </h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-white/60 mb-8">
             The African Young Leaders Summit proved that when youth are empowered and given a platform, they rise to the occasion. Join us as we continue building the next generation of African leaders.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/get-involved#donate"
-              className="px-8 py-4 bg-brand-orange hover:bg-brand-orange-dark text-white font-bold rounded-full transition-colors"
+              className="px-8 py-4 bg-brand-orange hover:bg-brand-orange-dark text-white font-bold rounded-full transition-colors duration-200 shadow-lg"
             >
               Support Our Mission
             </Link>
             <Link
               to="/projects"
-              className="px-8 py-4 border-2 border-white hover:border-brand-orange hover:text-brand-orange text-white font-bold rounded-full transition-colors"
+              className="px-8 py-4 border-2 border-white hover:border-brand-orange hover:text-brand-orange text-white font-bold rounded-full transition-colors duration-200"
             >
               View Our Projects
             </Link>

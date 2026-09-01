@@ -19,7 +19,7 @@ export default function ContactHero() {
           <span className="text-brand-orange">Conversation</span>
         </h1>
         <p className="text-white/55 text-base sm:text-lg leading-relaxed max-w-xl">
-          Whether you want to partner, volunteer, donate, or just say hello — we&apos;d love to hear from you. Every message matters.
+          Whether you want to partner, volunteer, donate, or just say hello, we'd love to hear from you. Every message matters.
         </p>
       </div>
     </section>

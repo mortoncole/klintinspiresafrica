@@ -38,7 +38,7 @@ export default function Purpose() {
             </div>
             <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
               To inspire, empower, and equip African youth through mindset
-              development, health awareness, and personal growth—helping them
+              development, health awareness, and personal growth, helping them
               discover themselves and become their best.
             </p>
           </div>

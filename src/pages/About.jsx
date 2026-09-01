@@ -13,7 +13,7 @@ export default function About() {
     <div className="min-h-screen">
       <SEO
         title="About Us"
-        description="Learn about the mission, story, and team behind Klint Inspires Africa — a foundation transforming lives through education, health, and community outreach in Ghana."
+        description="Learn about the mission, story, and team behind Klint Inspires Africa, a foundation transforming lives through education, health, and community outreach in Ghana."
         path="/about"
       />
       <Navbar />

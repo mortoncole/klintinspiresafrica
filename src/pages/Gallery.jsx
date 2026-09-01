@@ -10,7 +10,7 @@ export default function Gallery() {
     <div className="min-h-screen">
       <SEO
         title="Gallery"
-        description="Photos and videos from Klint Inspires Africa's outreach events — Streetmas, orphanage visits, education empowerment drives, and health campaigns across Ghana."
+        description="Photos and videos from Klint Inspires Africa's outreach events, Streetmas, orphanage visits, education empowerment drives, and health campaigns across Ghana."
         path="/gallery"
       />
       <Navbar />

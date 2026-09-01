@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-6 space-y-2 mb-4">
               <li><strong>Contact Forms:</strong> Full name, email address, subject, and message when you contact us</li>
               <li><strong>Volunteer Sign-Up:</strong> Full name, phone number, email address, location, skills/interests, availability, and additional information about your motivation to volunteer</li>
-              <li><strong>Donations:</strong> When you donate via mobile money or bank transfer, you may provide information such as transaction details. We do not directly collect or store payment card information—transactions are processed through external payment providers</li>
+              <li><strong>Donations:</strong> When you donate via mobile money or bank transfer, you may provide information such as transaction details. We do not directly collect or store payment card information, transactions are processed through external payment providers</li>
               <li><strong>Email Communications:</strong> If you subscribe to updates or newsletters, we collect your email address</li>
             </ul>
 

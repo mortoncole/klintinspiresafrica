@@ -12,7 +12,7 @@ export default function GetInvolved() {
   return (
     <div className="min-h-screen">
       <SEO
-        title="Get Involved — Donate & Volunteer"
+        title="Get Involved, Donate & Volunteer"
         description="Support Klint Inspires Africa by donating, volunteering, or becoming a partner. Every contribution helps empower youth and communities across Ghana."
         path="/get-involved"
       />
@@ -39,7 +39,7 @@ export default function GetInvolved() {
       <PartnerSection />
       <SpreadSection />
 
-      {/* Bottom CTA — link to Contact */}
+      {/* Bottom CTA, link to Contact */}
       <section className="bg-brand-navy py-16 px-4 text-center">
         <p className="text-white/60 text-base mb-3">Still have questions about getting involved?</p>
         <Link

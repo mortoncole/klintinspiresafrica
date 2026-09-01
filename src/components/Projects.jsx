@@ -22,6 +22,13 @@ const projects = [
     image: '/projects/education.jpg',
     fallback: 'from-orange-700 to-orange-950',
   },
+  {
+    id: 4,
+    title: 'African Young Leaders Summit',
+    description: 'The inaugural summit empowering 800+ youth with leadership, governance, and personal branding.',
+    image: '/AYLS.jpg',
+    fallback: 'from-blue-600 to-blue-950',
+  },
 ]
 
 function ProjectCard({ project }) {
@@ -42,14 +49,14 @@ function ProjectCard({ project }) {
           {project.title}
         </h3>
         <p className="text-white/80 text-sm mb-3">
-          |{project.description}
+          {project.description}
         </p>
         <div className="flex justify-end">
           <Link
             to="/projects"
             className="text-white font-semibold text-sm hover:text-brand-orange transition-colors duration-200"
           >
-            Read More →
+            Read More
           </Link>
         </div>
       </div>

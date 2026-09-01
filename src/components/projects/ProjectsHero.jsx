@@ -35,7 +35,7 @@ export default function ProjectsHero() {
             </span>
           </h1>
           <p className="text-white/60 text-base sm:text-lg leading-relaxed max-w-xl">
-            From feeding the homeless to empowering students — every project is a deliberate act of love for African youth and communities.
+            From feeding the homeless to empowering students, every project is a deliberate act of love for African youth and communities.
           </p>
         </div>
 

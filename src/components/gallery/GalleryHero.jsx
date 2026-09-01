@@ -35,7 +35,7 @@ export default function GalleryHero() {
         </h1>
 
         <p className="text-white/55 text-base sm:text-lg leading-relaxed max-w-xl mb-12">
-          Moments captured from our outreaches, empowerment sessions, and community work across Ghana — real people, real change.
+          Moments captured from our outreaches, empowerment sessions, and community work across Ghana. Real people, real change.
         </p>
 
         {/* Stats strip */}

@@ -1,8 +1,8 @@
 const ways = [
-  { icon: '🤝', label: 'Donate', href: '#donate' },
-  { icon: '🙋', label: 'Volunteer', href: '#volunteer' },
-  { icon: '🏢', label: 'Partner', href: '#partner' },
-  { icon: '📣', label: 'Spread the Word', href: '#spread' },
+  { label: 'Donate', href: '#donate' },
+  { label: 'Volunteer', href: '#volunteer' },
+  { label: 'Partner', href: '#partner' },
+  { label: 'Spread the Word', href: '#spread' },
 ]
 
 export default function GetInvolvedHero() {
@@ -21,12 +21,12 @@ export default function GetInvolvedHero() {
           <span className="text-brand-orange">Change</span>
         </h1>
         <p className="text-white/55 text-base sm:text-lg leading-relaxed max-w-xl mb-14">
-          There are many ways to stand with us. Whether you give, serve, partner, or simply share — every action sparks hope in a young person's life.
+          There are many ways to stand with us. Whether you give, serve, partner, or simply share, every action sparks hope in a young person's life.
         </p>
 
         {/* Quick-jump cards */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-          {ways.map(({ icon, label, href }) => (
+          {ways.map(({ label, href }) => (
             <a
               key={label}
               href={href}
@@ -34,7 +34,6 @@ export default function GetInvolvedHero() {
                          bg-white/5 border border-white/10 hover:bg-brand-orange
                          hover:border-brand-orange transition-all duration-300 text-center"
             >
-              <span className="text-3xl">{icon}</span>
               <span className="text-white font-bold text-sm tracking-wide">{label}</span>
               <div className="w-5 h-0.5 bg-white/30 group-hover:bg-white rounded-full transition-all duration-300" />
             </a>

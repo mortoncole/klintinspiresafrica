@@ -52,7 +52,6 @@ const methods = [
     id: 'momo',
     network: 'MTN Mobile Money',
     color: 'from-yellow-400 to-yellow-600',
-    icon: '📱',
     details: [
       { label: 'Number', value: '0544411364' },
       { label: 'Name', value: 'CLINTON OSEI ADDO' },
@@ -63,7 +62,6 @@ const methods = [
     id: 'bank',
     network: 'Bank Transfer',
     color: 'from-brand-navy to-slate-700',
-    icon: '🏦',
     details: [
       { label: 'Bank', value: 'GCB' },
       { label: 'Account Name', value: 'Klint Inspires Africa Foundation' },
@@ -83,7 +81,7 @@ export default function DonateSection() {
         </div>
         <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-navy mb-4">Make a Donation</h2>
         <p className="text-gray-500 text-base leading-relaxed max-w-xl mb-12">
-          Your gift — big or small — goes directly into the hands of those who need it most. Every cedi counts.
+          Your gift, big or small, goes directly into the hands of those who need it most. Every cedi counts.
         </p>
 
         {/* Impact strip */}
@@ -106,7 +104,6 @@ export default function DonateSection() {
             <div key={method.id} className="rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
               {/* Header */}
               <div className={`bg-gradient-to-r ${method.color} p-5 flex items-center gap-3`}>
-                <span className="text-2xl">{method.icon}</span>
                 <p className="text-white font-extrabold text-base">{method.network}</p>
               </div>
               {/* Details */}

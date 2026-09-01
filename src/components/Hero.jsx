@@ -6,8 +6,8 @@ const AYLS_DURATION = 60000
 
 const slides = [
   {
-    image: '/THANK YOU.jpeg',
-    badge: 'Summit · August 2026',
+    image: '/AYLS.jpg',
+    badge: 'Summit, August 2026',
     headline: 'African Young Leaders',
     accent: 'Summit Concluded.',
     sub: 'A historic inaugural event at St. Thomas Social Center in Obuasi bringing together youth, leaders, and changemakers. Massive turnout, powerful keynotes, and lasting impact on the next generation of African leaders.',
@@ -16,10 +16,10 @@ const slides = [
   },
   {
     image: '/gallery/padagirl/wide5.JPG',
-    badge: 'Health · May 2026',
+    badge: 'Health, May 2026',
     headline: 'Pad a Girl',
     accent: 'Mission Complete.',
-    sub: '500+ JHS girls reached at Independence School Park, Obuasi East — pads distributed, hygiene education delivered.',
+    sub: '500+ JHS girls reached at Independence School Park, Obuasi East. Pads distributed, hygiene education delivered.',
     primary: { label: 'See the Gallery', to: '/gallery' },
     secondary: { label: 'Support Us', to: '/get-involved#donate' },
   },
@@ -34,16 +34,16 @@ const slides = [
   },
   {
     image: '/projects/streetmas2.jpg',
-    badge: 'Outreach · 2025',
+    badge: 'Outreach, 2025',
     headline: '1000+ Lives Touched',
     accent: 'This Christmas.',
-    sub: 'Streetmas 2.0 brought meals, gifts, and hope to street-connected youth across Accra — bigger and bolder than ever.',
+    sub: 'Streetmas 2.0 brought meals, gifts, and hope to street-connected youth across Accra. Bigger and bolder than ever.',
     primary: { label: 'See the Impact', to: '/projects' },
     secondary: { label: 'Support Us', to: '/get-involved#donate' },
   },
   {
     image: '/projects/edu1.jpg',
-    badge: 'Outreach · 2023',
+    badge: 'Outreach, 2023',
     headline: 'Because Every Child',
     accent: 'Deserves to Smile.',
     sub: 'Elite Day with the Orphans brought joy, gifts, and unforgettable memories to the Adullam Orphanage in Obuasi.',

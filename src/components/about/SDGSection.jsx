@@ -33,7 +33,7 @@ const sdgs = [
     color: '#C5192D',
     bg: '#fef2f3',
     description:
-      'We equip students with supplies, mentorship, and empowerment sessions — keeping them in school and preparing them for the future.',
+      'We equip students with supplies, mentorship, and empowerment sessions, keeping them in school and preparing them for the future.',
   },
 ]
 
@@ -50,7 +50,7 @@ export default function SDGSection() {
             Our UN SDG Commitments
           </h2>
           <p className="text-gray-500 text-base max-w-xl leading-relaxed">
-            Every project we run is anchored to the United Nations Sustainable Development Goals — because local action drives global change.
+            Every project we run is anchored to the United Nations Sustainable Development Goals, because local action drives global change.
           </p>
         </div>
 

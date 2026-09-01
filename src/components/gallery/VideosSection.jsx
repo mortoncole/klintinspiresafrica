@@ -57,7 +57,7 @@ export default function VideosSection() {
             Impact in Motion
           </h2>
           <p className="text-gray-500 text-base max-w-xl leading-relaxed">
-            Clips, snippets, and interviews from our outreaches — straight from the field.
+            Clips, snippets, and interviews from our outreaches, straight from the field.
           </p>
         </div>
 
