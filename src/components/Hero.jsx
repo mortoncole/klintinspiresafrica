@@ -82,7 +82,9 @@ export default function Hero() {
       {slides.map((s, i) => (
         <div
           key={i}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
+          className={`absolute inset-0 bg-center bg-brand-navy transition-opacity duration-1000 ${
+            i === 0 ? 'max-lg:bg-cover lg:bg-contain' : 'bg-cover'
+          } ${
             i === current ? 'opacity-100' : 'opacity-0'
           }`}
           style={{ backgroundImage: `url('${s.image}')` }}
