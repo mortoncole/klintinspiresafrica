@@ -6,7 +6,7 @@ const AYLS_DURATION = 60000
 
 const slides = [
   {
-    image: '/AYLS.jpg',
+    image: '/THANK YOU.jpeg',
     badge: 'Summit, August 2026',
     headline: 'African Young Leaders',
     accent: 'Summit Concluded.',
