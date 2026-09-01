@@ -26,7 +26,7 @@ const projects = [
     id: 4,
     title: 'African Young Leaders Summit',
     description: 'The inaugural summit empowering 800+ youth with leadership, governance, and personal branding.',
-    image: '/AYLS.jpg',
+    image: '/main flyer.png',
     fallback: 'from-blue-600 to-blue-950',
   },
 ]
