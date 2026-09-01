@@ -8,7 +8,7 @@ export const projects = [
     category: 'Summit',
     description:
       'The inaugural African Young Leaders Summit held at St. Thomas Social Center in Obuasi on August 22, 2026: "The Future is Now: Developing Africa\'s Next Generation of Leaders and Policymakers." A historic gathering bringing together youth, prominent keynote speakers, government officials, and changemakers to inspire and empower the next generation of African leaders.',
-    image: '/AYLS.jpg',
+    image: '/main flyer.png',
     fallback: 'from-blue-600 to-blue-950',
     impact: 'Massive Youth Turnout',
     year: '2026',

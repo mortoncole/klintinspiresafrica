@@ -64,7 +64,7 @@ export default function ProjectsGrid() {
 
   const filtered = active === 'All'
     ? projects.filter((p) => !p.featured)
-    : projects.filter((p) => p.category === active && !p.featured)
+    : projects.filter((p) => p.category === active)
 
   return (
     <section className="bg-gray-100 pb-20 px-4">
