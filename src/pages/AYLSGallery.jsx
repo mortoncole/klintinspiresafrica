@@ -150,7 +150,7 @@ const highlights = [
           </li>
         </ul>
         <a
-          href="https://youtu.be/LC9kJk8opnk?t=32"
+          href="https://youtu.be/LC9kJk8opnk?t=99"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 font-semibold text-brand-orange hover:text-brand-orange-dark transition-colors"
