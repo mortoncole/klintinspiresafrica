@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import SEO from '../components/SEO'
 import Navbar from '../components/Navbar'
@@ -126,7 +127,7 @@ const highlights = [
   {
     id: 'opening-keynote',
     title: 'Opening Keynote Address',
-    image: '/gallery/AYLS/keynote-speakers/sam-pobee.jpg',
+    speakerImage: '/gallery/AYLS/guest-speakers/MD-AGA.jpg',
     content: (
       <p>
         Ing. Sam Pobee, Managing Director of Anglogold Ashanti - Obuasi Mine,
@@ -139,7 +140,7 @@ const highlights = [
   {
     id: 'inspiring-opening',
     title: 'Inspiring Opening',
-    image: null,
+    speakerImage: '/gallery/AYLS/founder/KLINT.jpg',
     content: (
       <p>
         The summit was beautifully opened with an engaging rendition of{' '}
@@ -151,7 +152,7 @@ const highlights = [
   {
     id: 'panel-discussions',
     title: 'Three Transformative Panel Discussions',
-    image: null,
+    speakerImage: '/gallery/AYLS/guest-speakers/speakers-shoot.jpg',
     content: (
       <ul className="space-y-2 ml-4">
         <li>
@@ -175,7 +176,7 @@ const highlights = [
   {
     id: 'faustilove',
     title: 'Message from Hon. Faustilove Appiah Kanin',
-    image: '/gallery/AYLS/guest-speakers/faustilove-appiah.jpg',
+    speakerImage: '/gallery/AYLS/guest-speakers/Hon.Faustilove.jpeg',
     content: (
       <p>
         The Municipal Chief Executive of Obuasi West delivered a moving speech
@@ -193,7 +194,7 @@ const highlights = [
   {
     id: 'cultural-performances',
     title: 'Cultural Performances',
-    image: null,
+    speakerImage: '/gallery/AYLS/performances/spokenword.jpg',
     content: (
       <p>
         Moving drama and spoken word performances captured Africa's journey,
@@ -205,7 +206,7 @@ const highlights = [
   {
     id: 'networking',
     title: 'Networking & Connection',
-    image: null,
+    speakerImage: '/gallery/AYLS/crowd/widecrowd.jpeg',
     content: (
       <p>
         Beyond speeches, the summit featured connection sessions, business
@@ -216,48 +217,71 @@ const highlights = [
   },
 ]
 
-function UserIcon() {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4.42 0-8 2.24-8 5v1a1 1 0 001 1h14a1 1 0 001-1v-1c0-2.76-3.58-5-8-5z" />
-    </svg>
-  )
-}
+function HighlightCard({ highlight, revealed, onSelect, onHover, onLeave, onFocus, onBlur }) {
+  const hasImage = Boolean(highlight.speakerImage)
 
-function HighlightCard({ highlight }) {
   return (
-    <div className="relative group bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
-      {/* Left avatar "text bubble" anchored on the orange edge */}
-      <div className="absolute -left-7 top-1/2 -translate-y-1/2 z-10">
-        {/* Bubble tail pointing right */}
-        <div className="w-0 h-0 border-y-[8px] border-y-transparent border-l-[8px] border-l-white absolute left-[calc(100%-1px)] top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+    <div
+      className="relative group flex items-stretch rounded focus-visible:ring-2 focus-visible:ring-brand-orange focus-visible:outline-none"
+      role="button"
+      tabIndex={0}
+      aria-expanded={revealed}
+      aria-label={highlight.title}
+      onMouseEnter={onHover}
+      onMouseLeave={onLeave}
+      onFocus={onFocus}
+      onBlur={onBlur}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          onSelect()
+        }
+      }}
+      onPointerDown={(e) => {
+        // Touch/pen only — desktop hover is handled by onMouseEnter.
+        if (e.pointerType !== 'mouse') onSelect()
+      }}
+    >
+      {/* Speaker image reveal panel — anchored to the orange bar */}
+      {hasImage && (
         <div
-          className="relative w-14 h-14 rounded-full border-2 border-brand-orange bg-brand-navy text-brand-orange flex items-center justify-center shadow-lg overflow-hidden opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100 group-hover:animate-bubble_pop transition-all duration-300 origin-left"
+          aria-hidden="true"
+          className={`relative shrink-0 overflow-hidden bg-brand-orange transition-[width] duration-500 ease-out motion-reduce:transition-none ${
+            revealed
+              ? 'w-20 sm:w-24 md:w-28 xl:w-[190px] xl:absolute xl:right-full xl:top-0 xl:bottom-0'
+              : 'w-0'
+          }`}
         >
-          {highlight.image ? (
-            <img
-              src={highlight.image}
-              alt={highlight.title}
-              className="w-full h-full object-cover"
-              onError={(e) => {
-                e.target.style.display = 'none'
-              }}
-            />
-          ) : (
-            <span className="w-6 h-6">
-              <UserIcon />
-            </span>
-          )}
+          <img
+            src={highlight.speakerImage}
+            alt=""
+            loading="lazy"
+            className={`absolute inset-0 w-full h-full object-cover transition-[opacity,transform] duration-500 ease-out motion-reduce:transition-none ${
+              revealed ? 'opacity-100 scale-100' : 'opacity-0 scale-[1.03]'
+            }`}
+            onError={(e) => {
+              e.currentTarget.closest('div').style.display = 'none'
+            }}
+          />
         </div>
-      </div>
+      )}
 
-      <h4 className="font-bold text-brand-navy mb-2 pl-3">{highlight.title}</h4>
-      <div className="pl-3">{highlight.content}</div>
+      {/* Card body — unchanged visual identity, orange bar stays as the border */}
+      <div className="flex-1 bg-white border-l-4 border-brand-orange p-6 rounded shadow-sm hover:shadow-md transition-shadow duration-300">
+        <h4 className="font-bold text-brand-navy mb-2">{highlight.title}</h4>
+        <div>{highlight.content}</div>
+      </div>
     </div>
   )
 }
 
 export default function AYLSGallery() {
+  const [activeId, setActiveId] = useState(null)
+  const [hoveredId, setHoveredId] = useState(null)
+  const [focusedId, setFocusedId] = useState(null)
+
+  const select = (id) => setActiveId((current) => (current === id ? null : id))
+
   return (
     <div className="min-h-screen">
       <SEO
@@ -309,7 +333,7 @@ export default function AYLSGallery() {
       </section>
 
       {/* Event Story */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50 overflow-hidden">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-extrabold text-brand-navy mb-8">The Summit Story</h2>
 
@@ -325,9 +349,32 @@ export default function AYLSGallery() {
             <h3 className="text-2xl font-bold text-brand-navy mt-10 mb-4">Highlights of the Day</h3>
 
             <div className="space-y-6">
-              {highlights.map((highlight) => (
-                <HighlightCard key={highlight.id} highlight={highlight} />
-              ))}
+              {highlights.map((highlight) => {
+                const revealed =
+                  activeId === highlight.id ||
+                  hoveredId === highlight.id ||
+                  focusedId === highlight.id
+                return (
+                  <HighlightCard
+                    key={highlight.id}
+                    highlight={highlight}
+                    revealed={revealed}
+                    onSelect={() => select(highlight.id)}
+                    onHover={() => setHoveredId(highlight.id)}
+                    onLeave={() =>
+                      setHoveredId((current) =>
+                        current === highlight.id ? null : current
+                      )
+                    }
+                    onFocus={() => setFocusedId(highlight.id)}
+                    onBlur={() =>
+                      setFocusedId((current) =>
+                        current === highlight.id ? null : current
+                      )
+                    }
+                  />
+                )
+              })}
             </div>
 
             <p className="text-lg mt-10 italic text-gray-600">
