@@ -129,12 +129,35 @@ const highlights = [
     title: 'Opening Keynote Address',
     speakerImage: '/gallery/AYLS/guest-speakers/MD-AGA.jpg',
     content: (
-      <p>
-        Ing. Sam Pobee, Managing Director of Anglogold Ashanti - Obuasi Mine,
-        delivered a powerful keynote that set the tone for the entire summit,
-        speaking to the importance of youth involvement in industry and
-        nation-building.
-      </p>
+      <div>
+        <p className="mb-3">
+          In his opening keynote, <strong>Dr. Ing. Samuel Pobee</strong>{' '}
+          delivered a passionate call to action built on three themes:
+        </p>
+        <ul className="space-y-2 mb-3 list-disc pl-5">
+          <li>
+            <strong>Seize the moment</strong> — "the future is now"; succeed by
+            taking initiative, not by waiting or traveling far away.
+          </li>
+          <li>
+            <strong>Shift your mindset</strong> — "What changes life is mindset,
+            what changes life is decision, what changes life is taking a step
+            and an action, not just listening."
+          </li>
+          <li>
+            <strong>Be a doer</strong> — become a problem-solver who creates
+            actionable plans, not just a hearer of ideas.
+          </li>
+        </ul>
+        <a
+          href="https://youtu.be/LC9kJk8opnk?t=32"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 font-semibold text-brand-orange hover:text-brand-orange-dark transition-colors"
+        >
+          ▶ Watch his full keynote
+        </a>
+      </div>
     ),
   },
   {
