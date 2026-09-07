@@ -163,7 +163,7 @@ const highlights = [
   {
     id: 'nana-boachie',
     title: 'Message from Mrs. Nana Boachie-Chikata',
-    speakerImage: '/gallery/AYLS/speakers-flyers/MRS. NANA AFIA BOACHIE (2).jpg.jpeg',
+    speakerImage: '/gallery/AYLS/keynote-speakers/bacnof.jpg',
     content: (
       <div>
         <p className="mb-3">
