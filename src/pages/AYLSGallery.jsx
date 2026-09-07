@@ -13,7 +13,7 @@ const speakers = [
     image: '/gallery/AYLS/guest-speakers/MD-AGA.jpg',
   },
   {
-    name: 'Hon. Yaw Boampong Adu-Boampong ESQ.',
+    name: 'Hon. Yaw Boampong Adu-Brempong ESQ.',
     title: 'Barrister and Solicitor of the Supreme Court of Ghana',
     organization: 'Ghana',
     role: 'Panel Speaker',
