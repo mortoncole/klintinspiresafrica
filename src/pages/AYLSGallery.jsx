@@ -576,7 +576,11 @@ export default function AYLSGallery() {
                       src={src}
                       alt={`${category.title} - Image ${i + 1}`}
                       loading="lazy"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className={`w-full h-full ${
+                        category.fit === 'contain'
+                          ? 'object-contain object-top bg-gray-100'
+                          : 'object-cover'
+                      } group-hover:scale-105 transition-transform duration-500`}
                       onError={(e) => {
                         e.target.parentElement.innerHTML =
                           '<div class="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">Image not found</div>'
