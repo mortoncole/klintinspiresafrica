@@ -95,31 +95,58 @@ const galleryCategories = [
     id: 'keynotes',
     title: 'Keynote Speakers',
     description: 'Powerful addresses from industry leaders and policymakers',
-    folder: 'keynote-speakers',
+    images: [
+      '/gallery/AYLS/guest-speakers/MD-AGA.jpg',
+      '/gallery/AYLS/guest-speakers/Hon.Yaw B.jpg',
+      '/gallery/AYLS/guest-speakers/Lawyer Bonnah.jpg',
+      '/gallery/AYLS/guest-speakers/Dr.Ernest.jpg',
+      '/gallery/AYLS/guest-speakers/Mr.Bentum.jpg',
+      '/gallery/AYLS/keynote-speakers/bacnof.jpg',
+    ],
   },
   {
     id: 'guests',
     title: 'Guest Speakers & Officials',
     description: 'Distinguished guests sharing their wisdom and insights',
-    folder: 'guest-speakers',
+    images: [
+      '/gallery/AYLS/guest-speakers/Dr.Stephen.jpg',
+      '/gallery/AYLS/guest-speakers/nanabonsrah.jpg',
+      '/gallery/AYLS/guest-speakers/Hon.Faustilove.jpeg',
+      '/gallery/AYLS/guest-speakers/Dr.Duffuor.jpg',
+      '/gallery/AYLS/guest-speakers/hamza.jpg',
+      '/gallery/AYLS/guest-speakers/speakers-shoot.jpg',
+    ],
   },
   {
     id: 'crowd',
     title: 'The Youth - Our Future',
     description: 'Over 800 young minds engaged and inspired',
-    folder: 'crowd',
+    images: [
+      '/gallery/AYLS/crowd/wide.jpeg',
+      '/gallery/AYLS/crowd/widecrowd.jpeg',
+    ],
   },
   {
     id: 'performances',
     title: 'Performances & Cultural Moments',
-    description: 'Drama and spoken word celebrating Africa\'s journey',
-    folder: 'performances',
+    description: "Drama and spoken word celebrating Africa's journey",
+    images: [
+      '/gallery/AYLS/performances/spokenword.jpg',
+      '/gallery/AYLS/performances/drama.jpg',
+      '/gallery/AYLS/performances/drama1.jpg',
+      '/gallery/AYLS/performances/drama2.jpg',
+      '/gallery/AYLS/performances/drama3.jpg',
+    ],
   },
   {
     id: 'founder',
     title: 'Behind the Vision',
     description: 'Klint Inspires Africa leadership in action',
-    folder: 'founder',
+    images: [
+      '/gallery/AYLS/founder/KLINT.jpg',
+      '/gallery/AYLS/founder/klintt.jpg',
+      '/gallery/AYLS/founder/klint (2).jpg',
+    ],
   },
 ]
 
@@ -539,14 +566,15 @@ export default function AYLSGallery() {
 
               {/* Image grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[...Array(6)].map((_, i) => (
+                                {category.images.map((src, i) => (
                   <div
-                    key={i}
+                    key={src}
                     className="group aspect-video bg-gradient-to-br from-gray-200 to-gray-300 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300"
                   >
                     <img
-                      src={`/gallery/AYLS/${category.folder}/image-${i + 1}.jpg`}
+                      src={src}
                       alt={`${category.title} - Image ${i + 1}`}
+                      loading="lazy"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       onError={(e) => {
                         e.target.parentElement.innerHTML =
