@@ -143,9 +143,9 @@ const galleryCategories = [
     title: 'Behind the Vision',
     description: 'Klint Inspires Africa leadership in action',
     images: [
-      '/gallery/AYLS/founder/KLINT.jpg',
-      '/gallery/AYLS/founder/klintt.jpg',
-      '/gallery/AYLS/founder/klint (2).jpg',
+      '/gallery/AYLS/founder/KLINT-wide.jpg',
+      '/gallery/AYLS/founder/klintt-wide.jpg',
+      '/gallery/AYLS/founder/klint2-wide.jpg',
     ],
   },
 ]
