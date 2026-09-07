@@ -578,7 +578,7 @@ export default function AYLSGallery() {
                       loading="lazy"
                       className={`w-full h-full ${
                         category.fit === 'contain'
-                          ? 'object-contain object-top bg-gray-100'
+                          ? 'object-cover object-top'
                           : 'object-cover'
                       } group-hover:scale-105 transition-transform duration-500`}
                       onError={(e) => {
