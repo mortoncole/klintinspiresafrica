@@ -45,7 +45,7 @@ const speakers = [
     title: 'Project Director',
     organization: 'Rotary Ghana - Godfred Acheampong Foundation',
     role: 'Panel Speaker',
-    image: '/gallery/AYLS/keynote-speakers/godfred-acheampong.jpg',
+    image: '/gallery/AYLS/guest-speakers/Mr. Godfred Acheampong.jpg',
   },
   {
     name: 'Mrs. Nana Afia Boachie-Tsikata',
@@ -59,7 +59,7 @@ const speakers = [
     title: 'Mining Engineer',
     organization: 'A.A Foundation',
     role: 'Panel Speaker',
-    image: '/gallery/AYLS/keynote-speakers/portia-owusu.jpg',
+    image: '/gallery/AYLS/guest-speakers/A.A FOUNDATION.jpg',
   },
 ]
 
@@ -86,7 +86,7 @@ const guests = [
     name: 'Nana Amoanimaa Dede II (Adanasihemaa)',
     title: 'Paramount Queen Mother',
     subtitle: 'Adansi Traditional Council',
-    image: '/gallery/AYLS/guest-speakers/nana-amoanimaa.jpg',
+    image: '/gallery/AYLS/guest-speakers/Nana Amoanimaa Dede II.jpg',
   },
 ]
 
