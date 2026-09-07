@@ -163,7 +163,7 @@ const highlights = [
   {
     id: 'nana-boachie',
     title: 'Message from Mrs. Nana Boachie-Chikata',
-    speakerImage: '/gallery/AYLS/speakers-flyers/MRS. NANA AFIA BOACHIE (1).jpg.jpeg',
+    speakerImage: '/gallery/AYLS/speakers-flyers/MRS. NANA AFIA BOACHIE (2).jpg.jpeg',
     content: (
       <div>
         <p className="mb-3">
@@ -189,6 +189,14 @@ const highlights = [
             this summit guide the next generation of changemakers.
           </li>
         </ul>
+        <a
+          href="https://youtu.be/LC9kJk8opnk?t=3010"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 font-semibold text-brand-orange hover:text-brand-orange-dark transition-colors"
+        >
+          ▶ Watch her full address
+        </a>
       </div>
     ),
   },
