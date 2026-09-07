@@ -161,15 +161,35 @@ const highlights = [
     ),
   },
   {
-    id: 'inspiring-opening',
-    title: 'Inspiring Opening',
-    speakerImage: '/gallery/AYLS/founder/KLINT.jpg',
+    id: 'nana-boachie',
+    title: 'Message from Mrs. Nana Boachie-Chikata',
+    speakerImage: '/gallery/AYLS/speakers-flyers/MRS. NANA AFIA BOACHIE (1).jpg.jpeg',
     content: (
-      <p>
-        The summit was beautifully opened with an engaging rendition of{' '}
-        <em>"We are the chosen generation"</em> by Sinach, setting a spiritual
-        and motivational tone for the youth.
-      </p>
+      <div>
+        <p className="mb-3">
+          In her address to the summit,{' '}
+          <strong>Mrs. Nana Boachie-Chikata, CEO of BACNOF Schools,</strong>{' '}
+          spoke on three themes:
+        </p>
+        <ul className="space-y-2 mb-3 list-disc pl-5">
+          <li>
+            <strong>Local empowerment</strong> — create the future you want
+            within your own community instead of seeking opportunities outside
+            Ghana.
+          </li>
+          <li>
+            <strong>Practical action</strong> — she shared how she founded
+            her school in Obuasi on her father's advice to{' '}
+            <em>"brighten the corner where you are,"</em> urging the youth to
+            take initiative and solve problems locally rather than wait for
+            external solutions.
+          </li>
+          <li>
+            <strong>Mentorship value</strong> — leadership platforms like
+            this summit guide the next generation of changemakers.
+          </li>
+        </ul>
+      </div>
     ),
   },
   {
